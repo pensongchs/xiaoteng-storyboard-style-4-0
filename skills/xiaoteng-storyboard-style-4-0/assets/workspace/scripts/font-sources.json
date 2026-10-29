@@ -16,5 +16,6 @@
     "file": "官方字体使用说明.pdf",
     "suffix": ".pdf",
     "sha256": "96a38d831b57563636dd7826dd31045e51d937edff7e3b41aa677141808357ec"
-  }
+  },
+  "bundledDirectory": "resources/template-fonts"
 }

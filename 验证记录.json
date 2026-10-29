@@ -135,7 +135,7 @@
       "原路径审片会话"
     ],
     "pythonRequired": false,
-    "runtimeTests": 9,
+    "runtimeTests": 10,
     "keyframeLayoutSamples": 14,
     "existingDependenciesReused": true,
     "sharedRuntimeReuseTest": true,
@@ -154,5 +154,16 @@
     "renderSeconds": 207.3,
     "renderAndPreviewSeconds": 213.155,
     "scope": "本机60秒示例；不同设备与素材耗时不同"
+  },
+  "fonts": {
+    "bundled": true,
+    "files": [
+      "AlibabaHealthFont2.0CN-45R.ttf",
+      "AlibabaHealthFont2.0CN-85B.ttf",
+      "官方字体使用说明.pdf"
+    ],
+    "offlineInitialization": true,
+    "reuseExistingFiles": true,
+    "systemFontInstallationRequired": false
   }
 }

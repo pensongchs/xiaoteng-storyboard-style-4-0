@@ -14,7 +14,7 @@
     "station": "node scripts/review.cjs",
     "build:station": "vite build --config outputs/分镜素材制作/vite.config.ts",
     "setup": "node scripts/setup.cjs",
-    "test:runtime": "node --test scripts/runtime.test.cjs scripts/media.test.cjs"
+    "test:runtime": "node --test scripts/runtime.test.cjs scripts/media.test.cjs scripts/font-package.test.cjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.484",
