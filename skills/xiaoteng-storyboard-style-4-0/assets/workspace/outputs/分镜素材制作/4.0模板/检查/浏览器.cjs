@@ -1,8 +1,13 @@
 const fs=require('node:fs'),path=require('node:path');
 const {ensureBrowser,openBrowser}=require('@remotion/renderer');
-module.exports.open=async()=>{
+async function prepare(){
+ if(process.platform==='win32'&&process.arch!=='x64')throw Error('当前固定版本需要 Windows x64 的 Node.js 与浏览器，请先使用 x64 运行环境');
  const state=await ensureBrowser({chromeMode:'headless-shell',...(process.env.REMOTION_BROWSER_EXECUTABLE?{browserExecutable:process.env.REMOTION_BROWSER_EXECUTABLE}:{}),logLevel:'error'});
- if(!('path'in state))throw Error('未找到兼容的无头浏览器');let executable=state.path;
+ if(!('path'in state))throw Error('未找到兼容的无头浏览器');return state;
+}
+module.exports.prepare=prepare;
+module.exports.open=async()=>{
+ const state=await prepare();let executable=state.path;
  if(process.platform!=='win32'){
   const dir=path.resolve(__dirname,'../../../../.runtime');fs.mkdirSync(dir,{recursive:true});
   const wrapper=path.join(dir,'browser.sh'),quote=s=>"'"+s.replaceAll("'","'\\''")+"'";

@@ -14,14 +14,10 @@ function cmapGlyphs(file){
  return code=>{if(format12){const n=b.readUInt32BE(format12+12);let lo=0,hi=n-1;while(lo<=hi){const m=(lo+hi)>>1,at=format12+16+m*12,a=b.readUInt32BE(at),z=b.readUInt32BE(at+4);if(code<a)hi=m-1;else if(code>z)lo=m+1;else return b.readUInt32BE(at+8)+code-a!==0;}}
   if(code>65535||!format4)return false;const n=b.readUInt16BE(format4+6)/2,end=format4+14,start=end+n*2+2,delta=start+n*2,offset=delta+n*2;for(let i=0;i<n;i++){if(code>b.readUInt16BE(end+i*2))continue;if(code<b.readUInt16BE(start+i*2))return false;const d=b.readInt16BE(delta+i*2),o=b.readUInt16BE(offset+i*2);if(!o)return ((code+d)&65535)!==0;const g=b.readUInt16BE(offset+i*2+o+(code-b.readUInt16BE(start+i*2))*2);return g!==0&&((g+d)&65535)!==0;}return false;};
 }
-function pythonExecutable(){
- const cp=require('node:child_process');let launcher=null;if(process.platform==='win32'){const r=cp.spawnSync('py',['-3','-c','import sys;print(sys.executable)'],{encoding:'utf8'});if(r.status===0)launcher=r.stdout.trim();}for(const p of [process.env.PYTHON,path.join(ROOT,'.runtime/python',process.platform==='win32'?'Scripts/python.exe':'bin/python'),launcher,...(process.platform==='win32'?['python','python3']:['python3','python'])].filter(Boolean)){const r=cp.spawnSync(p,['-c','import sys,numpy;print(sys.version_info.major)'],{encoding:'utf8'});if(r.status===0)return p;}throw Error('需要Python3与NumPy，请先运行工程准备检查');
-}
 function runtimeCheck(){
  const lock=json(path.join(ROOT,'package.json'));
  for(const name of ['remotion','@remotion/renderer','@remotion/bundler','react','react-dom','typescript','pngjs'])demand(require(name+'/package.json').version===lock.dependencies[name],'依赖版本不符：'+name);
- const cp=require('node:child_process');for(const tool of ['ffmpeg','ffprobe'])demand(cp.spawnSync(tool,['-version']).status===0,'缺少工具：'+tool);
- pythonExecutable();
+ for(const tool of ['ffmpeg','ffprobe'])require('../../../../scripts/runtime.cjs').resolveTool(tool);
  const expected=json(path.join(TEMPLATE,'资源锁.json'));
  for(const font of expected.fonts){const file=path.join(PROJECT,'public/fonts',font.file);demand(fs.existsSync(file)&&sha(file)===font.sha256,'字体缺失或摘要变化：'+font.file);}
  for(const item of expected.assets)demand(fs.existsSync(resolveBase(item.path))&&sha(resolveBase(item.path))===item.sha256,'公共素材缺失或变化：'+item.path);
@@ -43,6 +39,12 @@ function readContract(file,{allowCoreChange=false}={}){
  let last=-Infinity;for(const q of cues){demand(Number.isFinite(q.startMs)&&q.endMs>q.startMs&&q.startMs>=last,'字幕时间码无效或倒序');last=q.startMs;demand(Array.isArray(q.tokens)&&q.tokens.length,'必须保留真实词元，禁止猜测触发时间');let prev=q.startMs;for(const t of q.tokens){demand(t.startMs>=q.startMs&&t.endMs<=q.endMs+.001&&t.endMs>=t.startMs&&t.startMs>=prev,'词元时间超出字幕或倒序');prev=t.startMs;}demand(q.tokens.map(t=>t.text).join('')===q.text,'字幕text与tokens不一致');}
  const ids=new Set();last=-Infinity;demand(Array.isArray(c.videos)&&c.videos.length,'缺少交付段落');for(const v of c.videos){demand(/^[A-Za-z0-9_-]+$/.test(v.id)&&!ids.has(v.id),'合成ID无效或重复');ids.add(v.id);demand(v.startMs>=last&&v.endMs>v.startMs,'段落重叠或时间无效');last=v.endMs;v.durationFrames=F(v.endMs)-F(v.startMs);demand(!v.frames||v.frames===v.durationFrames,'帧数与首尾时间码不一致');demand(!/[\/\\]/.test(v.name),'文件名不能含路径');v.file=v.name+'.mp4';}
  if(!c.verification)for(const v of c.videos){demand(Number.isFinite(v.sourceStartMs)&&v.sourceEndMs>v.sourceStartMs,'缺少保留原时码的sourceStartMs/sourceEndMs');v.holdFrames??=S.timing.tailHoldFrames;demand(Number.isInteger(v.holdFrames)&&v.holdFrames>=0&&v.durationFrames===F(v.sourceEndMs)-F(v.sourceStartMs)+v.holdFrames,'源时长与末帧保持时长不符');}
+ if(c.audioFile){
+  demand(typeof c.audioFile==='string','audioFile必须是本机文件路径');c.audioFile=resolveBase(c.audioFile);demand(fs.existsSync(c.audioFile)&&fs.statSync(c.audioFile).isFile(),'原始音频文件不存在：'+c.audioFile);
+  const meta=JSON.parse(require('node:child_process').execFileSync(require('../../../../scripts/runtime.cjs').resolveTool('ffprobe'),['-v','error','-show_streams','-show_format','-of','json',c.audioFile],{encoding:'utf8',windowsHide:true})),audio=meta.streams.find(s=>s.codec_type==='audio');
+  demand(audio,'输入文件不含声音');const duration=Number(audio.duration||meta.format.duration);
+  demand(Number.isFinite(duration)&&c.videos.every(v=>v.sourceStartMs>=0&&v.sourceEndMs<=duration*1000+50),'原始音频未覆盖输出段落的源时间');
+ }
  demand(Array.isArray(c.scenes)&&c.scenes.length,'缺少内容镜头');last=-Infinity;const owners=new Map(),texts=[];
  for(const scene of c.scenes){demand(scene.startMs>=last&&scene.endMs>scene.startMs,'新旧场景交接重叠或时间倒序');last=scene.endMs;demand(c.videos.some(v=>scene.startMs>=v.startMs&&scene.endMs<=v.endMs),'镜头超出段落');demand(Array.isArray(scene.screenText),'缺少屏显文字');texts.push(...scene.screenText);
   for(const beat of scene.beats??[]){demand(beat.atMs>=scene.startMs&&beat.atMs<scene.endMs,'对象触发超出镜头');if(beat.cueIndex!==undefined)demand(Math.abs(beat.atMs-cueAt(cues,beat.cueIndex,beat.word))<.001,'对象没有匹配真实词元时间');demand(beat.completeMs>=beat.atMs&&beat.completeMs<=scene.endMs,'动作未在镜头内完成');if(beat.untilMs!==undefined)demand(beat.untilMs>=beat.completeMs&&beat.untilMs<=scene.endMs,'停留/退场边界无效');}
@@ -58,4 +60,4 @@ function readContract(file,{allowCoreChange=false}={}){
  require('./轮播与转场.cjs').validate(c);
  c.cues=cues;return c;
 }
-module.exports={S,TEMPLATE,BASE,PROJECT,ROOT,F,sha,json,demand,resolveBase,cmapGlyphs,cueAt,runtimeCheck,readContract,pythonExecutable};
+module.exports={S,TEMPLATE,BASE,PROJECT,ROOT,F,sha,json,demand,resolveBase,cmapGlyphs,cueAt,runtimeCheck,readContract};

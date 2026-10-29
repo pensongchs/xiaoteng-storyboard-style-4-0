@@ -19,7 +19,7 @@
   "core": [
     {
       "path": "4.0模板/参数.ts",
-      "sha256": "836111dc9d2d98dafc14e2a322dcb1169deb68852fe35c2fbf3b503369c770ba"
+      "sha256": "9ffb052f1d6e8d6fdcf73ea7aba4406c8d0755d3e49cc5c2615d6b4f307cb4a2"
     },
     {
       "path": "4.0模板/组件/Clock40.ts",
@@ -51,7 +51,7 @@
     },
     {
       "path": "4.0模板/组件/Stage40.tsx",
-      "sha256": "d460e6f428d0eb1bcab42d0b3dd782f7a1cb7e6207ace8d011029cac08995d9c"
+      "sha256": "f1758df6ad07c88d42d98ef984f24adfb5fcb489aa6fc11f610fabd6012549d4"
     },
     {
       "path": "4.0模板/组件/StudentExtras40.tsx",
@@ -59,7 +59,11 @@
     },
     {
       "path": "4.0模板/组件/Style40.tsx",
-      "sha256": "10a380f72b10a1e43eebbb02894278d40e02c11f5c3d0269afcdfc366c857e02"
+      "sha256": "eff8fe050eeee2b88f246b7e51d10d28dd34b64d893e3e18ab8a9e5a47f67c97"
+    },
+    {
+      "path": "4.0模板/组件/LayoutGeometry40.ts",
+      "sha256": "0da401702bcb7b608ab1b0d480d2d49cc7a3fcb8e5bc4911649c663ca73cf8cc"
     }
   ]
 }

@@ -32,7 +32,7 @@ export const Timed40=({g,startMs,endMs,enterFrames=18,exitFrames=0,children}:{g:
 export const useSourceFrame40=(startMs:number)=>useCurrentFrame()+F(startMs);
 export const seeded40=(seed:string,index:number)=>random(seed+':'+index);
 
-/** 冻结像素沿用末帧，采集记录仍逐帧记录真实输出时钟。 */
+/** 冻结画面沿用末帧，输出时钟保持连续。 */
 const OutputClock40=({frame,children}:{frame:number;children:React.ReactNode})=>{
  useLayoutEffect(()=>{
   const plane=document.querySelector<HTMLElement>('[data-six-source-frame]');
@@ -48,7 +48,7 @@ const OutputClock40=({frame,children}:{frame:number;children:React.ReactNode})=>
  return <>{children}</>;
 };
 
-/** 正文沿用源时长，尾部冻结完整末帧，输出审计时钟继续前进。 */
+/** 正文沿用源时长，尾部冻结完整末帧，输出时钟继续前进。 */
 export const HoldLastFrame40=({sourceStartMs,sourceEndMs,outputStartMs,children}:{sourceStartMs:number;sourceEndMs:number;outputStartMs:number;children:React.ReactNode})=>{
  const local=useCurrentFrame(),normal=F(sourceEndMs)-F(sourceStartMs);
  if(normal<1)throw new Error('源段落时长无效');

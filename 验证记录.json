@@ -10,14 +10,11 @@
     "width": 1920,
     "height": 1080,
     "audio": false,
-    "decode": true,
-    "blackFrames": 0,
-    "sourceFrameStability": true,
-    "encodingContinuity": true,
-    "distinctSharedEffects": 5,
-    "sceneTransitions": 8,
-    "carouselImages": 2,
-    "sha256": "9257496c60c254dc4aaba9ac83250065f08fd3f05c01cb98b70c58c364c8c2d5"
+    "layoutErrors": 0,
+    "previewSheet": "previews/04_预览合集.png",
+    "previewFrames": 18,
+    "previewReviewed": true,
+    "sha256": "3d4c4e75549322cab86cf0258130be7898556a13d4dc61451c5c8945b160fd5d"
   },
   "componentPreviews": {
     "passed": true,
@@ -112,20 +109,50 @@
         "frames": 135,
         "videoSha256": "b98e67a3ccd0c0aeb1f8e709f24be965640a8156138524499b3a92a3a46d6422"
       }
-    ],
-    "uniqueFramesWithTripleCapture": 1220,
-    "reusedIdenticalDomStates": 1273
+    ]
   },
   "review": {
-    "built": true,
-    "browserPageLoaded": true,
+    "httpReady": true,
     "originalVideoDurationSeconds": 60,
     "linksSourceVideoOnly": true,
     "videoBackups": false,
     "sessionDataDistributed": false
   },
   "platforms": {
-    "macOS": "完整示例、组件预览、审片台实际验证通过",
-    "Windows": "文件名、驱动器路径、中文空格、启动及Python定位代码检查通过；尚未在Windows设备完整渲染"
+    "macOS": "完整60秒示例、14个关键画面、18帧预览合集、依赖复用、声音裁切及审片服务检查通过",
+    "Windows": "路径编码、系统分支与依赖选择逻辑检查通过；尚未在Windows设备完整渲染"
+  },
+  "workflow": {
+    "inputs": [
+      "文案",
+      "真实字幕时间码",
+      "原始音频"
+    ],
+    "outputs": [
+      "按文案设计的4.0画面",
+      "带原录音的成片",
+      "预览合集图",
+      "原路径审片会话"
+    ],
+    "pythonRequired": false,
+    "runtimeTests": 9,
+    "keyframeLayoutSamples": 14,
+    "existingDependenciesReused": true,
+    "sharedRuntimeReuseTest": true,
+    "bundledMediaToolsTest": true,
+    "audioSourceClockTest": true,
+    "audioTailSilenceTest": true,
+    "audioMuxPreservesVideoPackets": true,
+    "exampleNote": "仓库未附原始录音，示例保持纯画面；音频裁切与静音保持使用合成测试音验证"
+  },
+  "performance": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "node": "24.14.0",
+    "memoryGB": 16,
+    "concurrency": 2,
+    "renderSeconds": 207.3,
+    "renderAndPreviewSeconds": 213.155,
+    "scope": "本机60秒示例；不同设备与素材耗时不同"
   }
 }

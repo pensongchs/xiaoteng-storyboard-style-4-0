@@ -36,5 +36,5 @@ export const STYLE40 = {
   photoOverlay:'linear-gradient(90deg,#101113d6 0%,#10111370 38%,transparent 78%),linear-gradient(0deg,#10111355,transparent 24%)'},
  timing:{tailHoldFrames:30},
  library:{minimumDistinct:5},
- guards:{textPaddingX:23,textPaddingY:14,lineGap:6,identicalCaptures:3,maxCaptureAttempts:8,paintFrames:3},
+ guards:{textPaddingX:23,textPaddingY:14,lineGap:6,paintFrames:3},
 } as const;
