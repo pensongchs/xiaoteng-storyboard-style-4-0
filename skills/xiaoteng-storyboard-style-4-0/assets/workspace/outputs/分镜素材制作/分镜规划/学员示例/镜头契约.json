@@ -1,0 +1,428 @@
+{
+  "title": "学员示例",
+  "styleId": "storyboard-glass-4.0-student",
+  "entryPoint": "remotion-test/src/StudentDemoEntry.tsx",
+  "assetRoot": "示例素材",
+  "cuesFile": "分镜规划/学员示例/本期词元.json",
+  "outputDir": "remotion-test/renders/学员示例",
+  "internalDir": "分镜规划/学员示例/内部检查",
+  "motionLibraryFile": "分镜规划/学员示例/动效调用.json",
+  "videos": [
+    {
+      "id": "Student-Demo",
+      "name": "学员示例",
+      "startMs": 0,
+      "endMs": 60000,
+      "sourceStartMs": 0,
+      "sourceEndMs": 60000,
+      "holdFrames": 0,
+      "inputProps": {}
+    }
+  ],
+  "scenes": [
+    {
+      "id": "opening",
+      "startMs": 0,
+      "endMs": 3869,
+      "heading": "买房，先看真正的分水岭",
+      "background": "tradeoff.mp4",
+      "index": 2,
+      "screenText": [
+        "买房，先看真正的分水岭",
+        "2027买房",
+        "新房",
+        "二手房"
+      ],
+      "assets": [
+        "glass/neutral.jpg",
+        "tradeoff.mp4"
+      ],
+      "beats": [
+        {
+          "atMs": 0,
+          "cueIndex": 0,
+          "completeMs": 1050,
+          "untilMs": 3869,
+          "text": "2027买房"
+        }
+      ]
+    },
+    {
+      "id": "division",
+      "startMs": 3869,
+      "endMs": 9438,
+      "heading": "房子的竞争力正在分化",
+      "background": "division.mp4",
+      "index": 1,
+      "screenText": [
+        "房子的竞争力正在分化",
+        "越来越好",
+        "竞争力减弱"
+      ],
+      "assets": [
+        "glass/neutral.jpg",
+        "division.mp4"
+      ],
+      "beats": [
+        {
+          "atMs": 5160,
+          "cueIndex": 2,
+          "word": "变得",
+          "completeMs": 6210,
+          "untilMs": 9438,
+          "text": "越来越好"
+        },
+        {
+          "atMs": 8180,
+          "cueIndex": 3,
+          "word": "逐渐",
+          "completeMs": 9230,
+          "untilMs": 9438,
+          "text": "竞争力减弱"
+        }
+      ]
+    },
+    {
+      "id": "risk",
+      "startMs": 9438,
+      "endMs": 15755,
+      "heading": "别只盯着眼前的便宜",
+      "background": "分化风险.png",
+      "index": 4,
+      "screenText": [
+        "别只盯着眼前的便宜",
+        "买贵",
+        "捡便宜",
+        "难转手"
+      ],
+      "assets": [
+        "glass/neutral.jpg",
+        "分化风险.png"
+      ],
+      "beats": [
+        {
+          "atMs": 10820,
+          "cueIndex": 4,
+          "word": "买贵",
+          "completeMs": 11870,
+          "untilMs": 15755,
+          "text": "买贵"
+        },
+        {
+          "atMs": 12100,
+          "cueIndex": 5,
+          "word": "捡",
+          "completeMs": 13150,
+          "untilMs": 15755,
+          "text": "捡便宜"
+        },
+        {
+          "atMs": 14400,
+          "cueIndex": 6,
+          "word": "难转手",
+          "completeMs": 15450,
+          "untilMs": 15755,
+          "text": "难转手"
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "startMs": 15755,
+      "endMs": 28173,
+      "heading": "交易走向，出现分化",
+      "background": "data.mp4",
+      "index": 2,
+      "screenText": [
+        "交易走向，出现分化",
+        "2026年1—9月",
+        "新建商品房",
+        "二手房",
+        "-13.2%",
+        "+10.7%",
+        "来源：国家统计局、住房城乡建设部"
+      ],
+      "assets": [
+        "glass/neutral.jpg",
+        "data.mp4"
+      ],
+      "beats": [
+        {
+          "atMs": 16882,
+          "cueIndex": 8,
+          "completeMs": 17932,
+          "untilMs": 28173,
+          "text": "2026年1—9月"
+        },
+        {
+          "atMs": 19000,
+          "cueIndex": 9,
+          "word": "新建商品房",
+          "completeMs": 20050,
+          "untilMs": 28173,
+          "text": "新建商品房"
+        },
+        {
+          "atMs": 23140,
+          "cueIndex": 10,
+          "word": "二手房",
+          "completeMs": 24190,
+          "untilMs": 28173,
+          "text": "二手房"
+        }
+      ]
+    },
+    {
+      "id": "activity",
+      "startMs": 28173,
+      "endMs": 33300,
+      "heading": "从交易数据看活跃度",
+      "background": null,
+      "index": 3,
+      "screenText": [
+        "从交易数据看活跃度",
+        "交易数据",
+        "二手房",
+        "交易更活跃"
+      ],
+      "assets": [
+        "glass/neutral.jpg"
+      ],
+      "beats": [
+        {
+          "atMs": 28700,
+          "cueIndex": 12,
+          "word": "交易数据",
+          "completeMs": 29750,
+          "untilMs": 33300,
+          "text": "交易数据"
+        }
+      ]
+    },
+    {
+      "id": "reform",
+      "startMs": 33300,
+      "endMs": 40064,
+      "heading": "新房市场，也在改变",
+      "background": "reform.mp4",
+      "index": 2,
+      "screenText": [
+        "新房市场，也在改变",
+        "新房市场",
+        "8月底"
+      ],
+      "assets": [
+        "glass/neutral.jpg",
+        "reform.mp4"
+      ],
+      "beats": [
+        {
+          "atMs": 33300,
+          "cueIndex": 14,
+          "word": "新房",
+          "completeMs": 34350,
+          "untilMs": 40064,
+          "text": "新房市场"
+        },
+        {
+          "atMs": 36620,
+          "cueIndex": 15,
+          "word": "8",
+          "completeMs": 37670,
+          "untilMs": 40064,
+          "text": "8月底"
+        }
+      ]
+    },
+    {
+      "id": "policy",
+      "startMs": 40064,
+      "endMs": 47903,
+      "heading": "看得见，也要管得住",
+      "background": "policy.mp4",
+      "index": 1,
+      "screenText": [
+        "看得见，也要管得住",
+        "现房销售",
+        "有序推进",
+        "预售资金",
+        "加强监管"
+      ],
+      "assets": [
+        "glass/neutral.jpg",
+        "policy.mp4"
+      ],
+      "beats": [
+        {
+          "atMs": 42483,
+          "cueIndex": 16,
+          "word": "现房销售",
+          "completeMs": 43533,
+          "untilMs": 47903,
+          "text": "现房销售"
+        },
+        {
+          "atMs": 44423,
+          "cueIndex": 17,
+          "word": "预售资金",
+          "completeMs": 45473,
+          "untilMs": 47903,
+          "text": "预售资金"
+        }
+      ]
+    },
+    {
+      "id": "quality",
+      "startMs": 47903,
+      "endMs": 54334,
+      "heading": "看得见的品质，顺利交付",
+      "background": "现房交付.png",
+      "index": 2,
+      "screenText": [
+        "看得见的品质，顺利交付",
+        "未来新房",
+        "看得见",
+        "居住品质",
+        "顺利交付",
+        "看得见的建筑与居住细节",
+        "建造进度 最终要落实到按期交付",
+        "建筑实景"
+      ],
+      "assets": [
+        "glass/neutral.jpg",
+        "现房交付.png",
+        "reform-photo.jpg",
+        "quality-backdrop.jpg"
+      ],
+      "beats": [
+        {
+          "atMs": 48123,
+          "cueIndex": 19,
+          "word": "新房",
+          "completeMs": 49173,
+          "untilMs": 54334,
+          "text": "未来新房"
+        },
+        {
+          "atMs": 50183,
+          "cueIndex": 19,
+          "word": "看得见",
+          "completeMs": 51233,
+          "untilMs": 54334,
+          "text": "看得见"
+        },
+        {
+          "atMs": 50743,
+          "cueIndex": 19,
+          "word": "品质",
+          "completeMs": 51793,
+          "untilMs": 54334,
+          "text": "居住品质"
+        },
+        {
+          "atMs": 52303,
+          "cueIndex": 20,
+          "word": "顺利交付",
+          "completeMs": 53353,
+          "untilMs": 54334,
+          "text": "顺利交付"
+        }
+      ]
+    },
+    {
+      "id": "choice",
+      "startMs": 54334,
+      "endMs": 60000,
+      "heading": "2027年，到底怎么选？",
+      "background": "choice.mp4",
+      "index": 2,
+      "screenText": [
+        "2027年，到底怎么选？",
+        "新房",
+        "二手房"
+      ],
+      "assets": [
+        "glass/neutral.jpg",
+        "choice.mp4"
+      ],
+      "beats": [
+        {
+          "atMs": 56463,
+          "cueIndex": 22,
+          "word": "新房",
+          "completeMs": 57513,
+          "untilMs": 60000,
+          "text": "新房"
+        },
+        {
+          "atMs": 57483,
+          "cueIndex": 22,
+          "word": "二手房",
+          "completeMs": 58533,
+          "untilMs": 60000,
+          "text": "二手房"
+        }
+      ]
+    }
+  ],
+  "carousel": {
+    "scene": "quality",
+    "kind": "032",
+    "items": [
+      {
+        "file": "现房交付.png",
+        "label": "建筑实景",
+        "description": "看得见的建筑与居住细节",
+        "atMs": 47903
+      },
+      {
+        "file": "reform-photo.jpg",
+        "label": "建造到交付",
+        "description": "建造进度，最终要落实到按期交付",
+        "atMs": 52303
+      }
+    ]
+  },
+  "transitions": [
+    {
+      "atMs": 3869,
+      "kind": "wipe",
+      "frames": 12
+    },
+    {
+      "atMs": 9438,
+      "kind": "iris",
+      "frames": 12
+    },
+    {
+      "atMs": 15755,
+      "kind": "wipe",
+      "frames": 12
+    },
+    {
+      "atMs": 28173,
+      "kind": "iris",
+      "frames": 12
+    },
+    {
+      "atMs": 33300,
+      "kind": "wipe",
+      "frames": 12
+    },
+    {
+      "atMs": 40064,
+      "kind": "iris",
+      "frames": 12
+    },
+    {
+      "atMs": 47903,
+      "kind": "wipe",
+      "frames": 12
+    },
+    {
+      "atMs": 54334,
+      "kind": "iris",
+      "frames": 12
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Z005",
+  "name": "渐变重点框",
+  "seriesId": "S002",
+  "sourceEntry": "源码/组件.tsx",
+  "validation": {
+    "archiveVerified": true,
+    "platform": "macOS",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 135,
+    "audio": false,
+    "decode": true,
+    "previewSha256": "e4465bbbaf7f8b964c7c1dcdaa4145f33ce1698ad5e4160fee6cb3f1a26a2e70",
+    "userApproved": false
+  },
+  "dependencies": "共享工程package.json与scripts/font-sources.json"
+}

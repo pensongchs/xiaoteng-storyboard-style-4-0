@@ -1,0 +1,11 @@
+**/node_modules
+**/.runtime/
+**/.DS_Store
+**/public/fonts/
+**/public/系列素材/
+**/public/review-sessions/
+**/remotion-test/renders/
+**/内部检查/
+**/*.tsbuildinfo
+**/__pycache__/
+*.log

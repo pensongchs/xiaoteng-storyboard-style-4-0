@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": "049",
+      "name": "文字逐词聚焦框",
+      "scene": "opening",
+      "atMs": 2380,
+      "endMs": 3869,
+      "source": "049_文字逐词聚焦框/TrueFocus.jsx"
+    },
+    {
+      "id": "036",
+      "name": "灰紫等离子流光背景",
+      "scene": "activity",
+      "atMs": 28173,
+      "endMs": 33300,
+      "source": "036_灰紫等离子流光背景/Plasma.jsx"
+    },
+    {
+      "id": "035",
+      "name": "青色电弧发光边框",
+      "scene": "activity",
+      "atMs": 30014,
+      "endMs": 33300,
+      "source": "035_青色电弧发光边框/ElectricBorder.jsx"
+    },
+    {
+      "id": "004",
+      "name": "玻璃滑块三项选择器",
+      "scene": "policy",
+      "atMs": 41583,
+      "endMs": 47903,
+      "source": "004_玻璃滑块三项选择器/004_玻璃滑块三项选择器_样式.css"
+    },
+    {
+      "id": "032",
+      "name": "景深图片轮播",
+      "scene": "quality",
+      "atMs": 47903,
+      "endMs": 54334,
+      "source": "032_3D景深层叠图片轮播/DepthCarousel.jsx"
+    }
+  ]
+}

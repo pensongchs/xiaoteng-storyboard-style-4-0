@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "DOM",
+      "ES2022"
+    ],
+    "noEmit": true
+  },
+  "include": [
+    "outputs/\u5206\u955c\u7d20\u6750\u5236\u4f5c/remotion-test/src/StudentDemoEntry.tsx",
+    "outputs/\u5206\u955c\u7d20\u6750\u5236\u4f5c/4.0\u6a21\u677f/\u81ea\u5236\u52a8\u6548\u7ec4\u4ef6/**/\u5165\u53e3.tsx",
+    "outputs/\u5206\u955c\u7d20\u6750\u5236\u4f5c/4.0\u6a21\u677f/\u81ea\u5236\u52a8\u6548\u7ec4\u4ef6/S002_\u73bb\u7483\u5173\u952e\u8bcd\u7cfb\u5217/\u9884\u89c8\u5165\u53e3.tsx"
+  ]
+}

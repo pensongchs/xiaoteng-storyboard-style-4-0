@@ -1,0 +1,1570 @@
+[
+  {
+    "text": "2027年买房,",
+    "startMs": 0,
+    "endMs": 1086,
+    "tokens": [
+      {
+        "text": "20",
+        "startMs": 0,
+        "endMs": 140
+      },
+      {
+        "text": "27",
+        "startMs": 140,
+        "endMs": 440
+      },
+      {
+        "text": "年",
+        "startMs": 440,
+        "endMs": 620
+      },
+      {
+        "text": "买",
+        "startMs": 620,
+        "endMs": 800
+      },
+      {
+        "text": "房,",
+        "startMs": 800,
+        "endMs": 1086
+      }
+    ]
+  },
+  {
+    "text": "真正的分水岭不是新房和二手房,",
+    "startMs": 1231,
+    "endMs": 3683,
+    "tokens": [
+      {
+        "text": "真",
+        "startMs": 1231,
+        "endMs": 1360
+      },
+      {
+        "text": "正",
+        "startMs": 1360,
+        "endMs": 1560
+      },
+      {
+        "text": "的",
+        "startMs": 1560,
+        "endMs": 1640
+      },
+      {
+        "text": "分",
+        "startMs": 1640,
+        "endMs": 1780
+      },
+      {
+        "text": "水",
+        "startMs": 1780,
+        "endMs": 1920
+      },
+      {
+        "text": "岭",
+        "startMs": 1920,
+        "endMs": 2100
+      },
+      {
+        "text": "不是",
+        "startMs": 2100,
+        "endMs": 2380
+      },
+      {
+        "text": "新",
+        "startMs": 2380,
+        "endMs": 2640
+      },
+      {
+        "text": "房",
+        "startMs": 2640,
+        "endMs": 2860
+      },
+      {
+        "text": "和",
+        "startMs": 2860,
+        "endMs": 3140
+      },
+      {
+        "text": "二",
+        "startMs": 3140,
+        "endMs": 3300
+      },
+      {
+        "text": "手",
+        "startMs": 3300,
+        "endMs": 3420
+      },
+      {
+        "text": "房,",
+        "startMs": 3420,
+        "endMs": 3683
+      }
+    ]
+  },
+  {
+    "text": "而是有些房子正在变得越来越好。",
+    "startMs": 3869,
+    "endMs": 6062,
+    "tokens": [
+      {
+        "text": "而",
+        "startMs": 3869,
+        "endMs": 3980
+      },
+      {
+        "text": "是",
+        "startMs": 3980,
+        "endMs": 4100
+      },
+      {
+        "text": "有",
+        "startMs": 4100,
+        "endMs": 4260
+      },
+      {
+        "text": "些",
+        "startMs": 4260,
+        "endMs": 4400
+      },
+      {
+        "text": "房",
+        "startMs": 4400,
+        "endMs": 4580
+      },
+      {
+        "text": "子",
+        "startMs": 4580,
+        "endMs": 4800
+      },
+      {
+        "text": "正",
+        "startMs": 4800,
+        "endMs": 5000
+      },
+      {
+        "text": "在",
+        "startMs": 5000,
+        "endMs": 5160
+      },
+      {
+        "text": "变",
+        "startMs": 5160,
+        "endMs": 5300
+      },
+      {
+        "text": "得",
+        "startMs": 5300,
+        "endMs": 5420
+      },
+      {
+        "text": "越",
+        "startMs": 5420,
+        "endMs": 5560
+      },
+      {
+        "text": "来",
+        "startMs": 5560,
+        "endMs": 5680
+      },
+      {
+        "text": "越",
+        "startMs": 5680,
+        "endMs": 5820
+      },
+      {
+        "text": "好。",
+        "startMs": 5820,
+        "endMs": 6062
+      }
+    ]
+  },
+  {
+    "text": "有些房子的市场竞争力却在逐渐减弱。",
+    "startMs": 6296,
+    "endMs": 9078,
+    "tokens": [
+      {
+        "text": "有",
+        "startMs": 6296,
+        "endMs": 6400
+      },
+      {
+        "text": "些",
+        "startMs": 6400,
+        "endMs": 6560
+      },
+      {
+        "text": "房",
+        "startMs": 6560,
+        "endMs": 6720
+      },
+      {
+        "text": "子",
+        "startMs": 6720,
+        "endMs": 6880
+      },
+      {
+        "text": "的",
+        "startMs": 6880,
+        "endMs": 6960
+      },
+      {
+        "text": "市",
+        "startMs": 6960,
+        "endMs": 7120
+      },
+      {
+        "text": "场",
+        "startMs": 7120,
+        "endMs": 7280
+      },
+      {
+        "text": "竞",
+        "startMs": 7280,
+        "endMs": 7440
+      },
+      {
+        "text": "争",
+        "startMs": 7440,
+        "endMs": 7560
+      },
+      {
+        "text": "力",
+        "startMs": 7560,
+        "endMs": 7740
+      },
+      {
+        "text": "却",
+        "startMs": 7740,
+        "endMs": 8000
+      },
+      {
+        "text": "在",
+        "startMs": 8000,
+        "endMs": 8180
+      },
+      {
+        "text": "逐",
+        "startMs": 8180,
+        "endMs": 8400
+      },
+      {
+        "text": "渐",
+        "startMs": 8400,
+        "endMs": 8660
+      },
+      {
+        "text": "减",
+        "startMs": 8660,
+        "endMs": 8840
+      },
+      {
+        "text": "弱。",
+        "startMs": 8840,
+        "endMs": 9078
+      }
+    ]
+  },
+  {
+    "text": "未来最怕的不是房子买贵了,",
+    "startMs": 9438,
+    "endMs": 11307,
+    "tokens": [
+      {
+        "text": "未",
+        "startMs": 9438,
+        "endMs": 9560
+      },
+      {
+        "text": "来",
+        "startMs": 9560,
+        "endMs": 9700
+      },
+      {
+        "text": "最",
+        "startMs": 9700,
+        "endMs": 9840
+      },
+      {
+        "text": "怕",
+        "startMs": 9840,
+        "endMs": 10060
+      },
+      {
+        "text": "的",
+        "startMs": 10060,
+        "endMs": 10200
+      },
+      {
+        "text": "不是",
+        "startMs": 10200,
+        "endMs": 10460
+      },
+      {
+        "text": "房",
+        "startMs": 10460,
+        "endMs": 10700
+      },
+      {
+        "text": "子",
+        "startMs": 10700,
+        "endMs": 10820
+      },
+      {
+        "text": "买",
+        "startMs": 10820,
+        "endMs": 10980
+      },
+      {
+        "text": "贵",
+        "startMs": 10980,
+        "endMs": 11140
+      },
+      {
+        "text": "了,",
+        "startMs": 11140,
+        "endMs": 11307
+      }
+    ]
+  },
+  {
+    "text": "而是你以为捡了便宜,",
+    "startMs": 11466,
+    "endMs": 12855,
+    "tokens": [
+      {
+        "text": "而",
+        "startMs": 11466,
+        "endMs": 11560
+      },
+      {
+        "text": "是",
+        "startMs": 11560,
+        "endMs": 11700
+      },
+      {
+        "text": "你",
+        "startMs": 11700,
+        "endMs": 11840
+      },
+      {
+        "text": "以",
+        "startMs": 11840,
+        "endMs": 12000
+      },
+      {
+        "text": "为",
+        "startMs": 12000,
+        "endMs": 12100
+      },
+      {
+        "text": "捡",
+        "startMs": 12100,
+        "endMs": 12300
+      },
+      {
+        "text": "了",
+        "startMs": 12300,
+        "endMs": 12420
+      },
+      {
+        "text": "便",
+        "startMs": 12420,
+        "endMs": 12620
+      },
+      {
+        "text": "宜,",
+        "startMs": 12620,
+        "endMs": 12855
+      }
+    ]
+  },
+  {
+    "text": "最后却买到一套很难转手的房子。",
+    "startMs": 12967,
+    "endMs": 15413,
+    "tokens": [
+      {
+        "text": "最",
+        "startMs": 12967,
+        "endMs": 13080
+      },
+      {
+        "text": "后",
+        "startMs": 13080,
+        "endMs": 13260
+      },
+      {
+        "text": "却",
+        "startMs": 13260,
+        "endMs": 13460
+      },
+      {
+        "text": "买",
+        "startMs": 13460,
+        "endMs": 13620
+      },
+      {
+        "text": "到",
+        "startMs": 13620,
+        "endMs": 13760
+      },
+      {
+        "text": "一",
+        "startMs": 13760,
+        "endMs": 13900
+      },
+      {
+        "text": "套",
+        "startMs": 13900,
+        "endMs": 14060
+      },
+      {
+        "text": "很",
+        "startMs": 14060,
+        "endMs": 14400
+      },
+      {
+        "text": "难",
+        "startMs": 14400,
+        "endMs": 14580
+      },
+      {
+        "text": "转",
+        "startMs": 14580,
+        "endMs": 14800
+      },
+      {
+        "text": "手",
+        "startMs": 14800,
+        "endMs": 15000
+      },
+      {
+        "text": "的",
+        "startMs": 15000,
+        "endMs": 15100
+      },
+      {
+        "text": "房",
+        "startMs": 15100,
+        "endMs": 15260
+      },
+      {
+        "text": "子。",
+        "startMs": 15260,
+        "endMs": 15413
+      }
+    ]
+  },
+  {
+    "text": "先看一组数据,",
+    "startMs": 15755,
+    "endMs": 16720,
+    "tokens": [
+      {
+        "text": "先",
+        "startMs": 15755,
+        "endMs": 15920
+      },
+      {
+        "text": "看",
+        "startMs": 15920,
+        "endMs": 16060
+      },
+      {
+        "text": "一",
+        "startMs": 16060,
+        "endMs": 16200
+      },
+      {
+        "text": "组",
+        "startMs": 16200,
+        "endMs": 16320
+      },
+      {
+        "text": "数",
+        "startMs": 16320,
+        "endMs": 16480
+      },
+      {
+        "text": "据,",
+        "startMs": 16480,
+        "endMs": 16720
+      }
+    ]
+  },
+  {
+    "text": "2026年前9个月。",
+    "startMs": 16882,
+    "endMs": 18308,
+    "tokens": [
+      {
+        "text": "20",
+        "startMs": 16882,
+        "endMs": 17100
+      },
+      {
+        "text": "26",
+        "startMs": 17100,
+        "endMs": 17360
+      },
+      {
+        "text": "年前",
+        "startMs": 17360,
+        "endMs": 17700
+      },
+      {
+        "text": "9",
+        "startMs": 17700,
+        "endMs": 18040
+      },
+      {
+        "text": "个",
+        "startMs": 18040,
+        "endMs": 18140
+      },
+      {
+        "text": "月。",
+        "startMs": 18140,
+        "endMs": 18308
+      }
+    ]
+  },
+  {
+    "text": "全国新建商品房销售面积同比下降了13.2%",
+    "startMs": 18651,
+    "endMs": 22789,
+    "tokens": [
+      {
+        "text": "全",
+        "startMs": 18651,
+        "endMs": 18760
+      },
+      {
+        "text": "国",
+        "startMs": 18760,
+        "endMs": 19000
+      },
+      {
+        "text": "新",
+        "startMs": 19000,
+        "endMs": 19200
+      },
+      {
+        "text": "建",
+        "startMs": 19200,
+        "endMs": 19380
+      },
+      {
+        "text": "商",
+        "startMs": 19380,
+        "endMs": 19580
+      },
+      {
+        "text": "品",
+        "startMs": 19580,
+        "endMs": 19740
+      },
+      {
+        "text": "房",
+        "startMs": 19740,
+        "endMs": 19880
+      },
+      {
+        "text": "销",
+        "startMs": 19880,
+        "endMs": 20080
+      },
+      {
+        "text": "售",
+        "startMs": 20080,
+        "endMs": 20180
+      },
+      {
+        "text": "面",
+        "startMs": 20180,
+        "endMs": 20360
+      },
+      {
+        "text": "积",
+        "startMs": 20360,
+        "endMs": 20520
+      },
+      {
+        "text": "同",
+        "startMs": 20520,
+        "endMs": 20820
+      },
+      {
+        "text": "比",
+        "startMs": 20820,
+        "endMs": 21020
+      },
+      {
+        "text": "下",
+        "startMs": 21020,
+        "endMs": 21280
+      },
+      {
+        "text": "降",
+        "startMs": 21280,
+        "endMs": 21440
+      },
+      {
+        "text": "了",
+        "startMs": 21440,
+        "endMs": 21560
+      },
+      {
+        "text": "13.",
+        "startMs": 21560,
+        "endMs": 22300
+      },
+      {
+        "text": "2%",
+        "startMs": 22560,
+        "endMs": 22789
+      }
+    ]
+  },
+  {
+    "text": "但二手房交易网签面积却同比增长了10.7%",
+    "startMs": 23022,
+    "endMs": 27107,
+    "tokens": [
+      {
+        "text": "但",
+        "startMs": 23022,
+        "endMs": 23140
+      },
+      {
+        "text": "二",
+        "startMs": 23140,
+        "endMs": 23380
+      },
+      {
+        "text": "手",
+        "startMs": 23380,
+        "endMs": 23540
+      },
+      {
+        "text": "房",
+        "startMs": 23540,
+        "endMs": 23700
+      },
+      {
+        "text": "交",
+        "startMs": 23700,
+        "endMs": 23880
+      },
+      {
+        "text": "易",
+        "startMs": 23880,
+        "endMs": 24020
+      },
+      {
+        "text": "网",
+        "startMs": 24020,
+        "endMs": 24180
+      },
+      {
+        "text": "签",
+        "startMs": 24180,
+        "endMs": 24360
+      },
+      {
+        "text": "面",
+        "startMs": 24360,
+        "endMs": 24560
+      },
+      {
+        "text": "积",
+        "startMs": 24560,
+        "endMs": 24740
+      },
+      {
+        "text": "却",
+        "startMs": 24740,
+        "endMs": 24980
+      },
+      {
+        "text": "同",
+        "startMs": 24980,
+        "endMs": 25240
+      },
+      {
+        "text": "比",
+        "startMs": 25240,
+        "endMs": 25400
+      },
+      {
+        "text": "增",
+        "startMs": 25400,
+        "endMs": 25620
+      },
+      {
+        "text": "长",
+        "startMs": 25620,
+        "endMs": 25760
+      },
+      {
+        "text": "了",
+        "startMs": 25760,
+        "endMs": 25860
+      },
+      {
+        "text": "10.",
+        "startMs": 25860,
+        "endMs": 26580
+      },
+      {
+        "text": "7%",
+        "startMs": 26760,
+        "endMs": 27107
+      }
+    ]
+  },
+  {
+    "text": "这说明什么?",
+    "startMs": 27362,
+    "endMs": 27995,
+    "tokens": [
+      {
+        "text": "这",
+        "startMs": 27362,
+        "endMs": 27440
+      },
+      {
+        "text": "说",
+        "startMs": 27440,
+        "endMs": 27580
+      },
+      {
+        "text": "明",
+        "startMs": 27580,
+        "endMs": 27700
+      },
+      {
+        "text": "什么?",
+        "startMs": 27700,
+        "endMs": 27995
+      }
+    ]
+  },
+  {
+    "text": "至少从交易数据来看",
+    "startMs": 28173,
+    "endMs": 29824,
+    "tokens": [
+      {
+        "text": "至",
+        "startMs": 28173,
+        "endMs": 28300
+      },
+      {
+        "text": "少",
+        "startMs": 28300,
+        "endMs": 28500
+      },
+      {
+        "text": "从",
+        "startMs": 28500,
+        "endMs": 28700
+      },
+      {
+        "text": "交",
+        "startMs": 28700,
+        "endMs": 28940
+      },
+      {
+        "text": "易",
+        "startMs": 28940,
+        "endMs": 29100
+      },
+      {
+        "text": "数",
+        "startMs": 29100,
+        "endMs": 29280
+      },
+      {
+        "text": "据",
+        "startMs": 29280,
+        "endMs": 29420
+      },
+      {
+        "text": "来",
+        "startMs": 29420,
+        "endMs": 29560
+      },
+      {
+        "text": "看",
+        "startMs": 29560,
+        "endMs": 29824
+      }
+    ]
+  },
+  {
+    "text": "二手房市场表现出了更强的活跃度",
+    "startMs": 30014,
+    "endMs": 32618,
+    "tokens": [
+      {
+        "text": "二",
+        "startMs": 30014,
+        "endMs": 30180
+      },
+      {
+        "text": "手",
+        "startMs": 30180,
+        "endMs": 30360
+      },
+      {
+        "text": "房",
+        "startMs": 30360,
+        "endMs": 30540
+      },
+      {
+        "text": "市",
+        "startMs": 30540,
+        "endMs": 30700
+      },
+      {
+        "text": "场",
+        "startMs": 30700,
+        "endMs": 30860
+      },
+      {
+        "text": "表",
+        "startMs": 30860,
+        "endMs": 31080
+      },
+      {
+        "text": "现",
+        "startMs": 31080,
+        "endMs": 31280
+      },
+      {
+        "text": "出",
+        "startMs": 31280,
+        "endMs": 31420
+      },
+      {
+        "text": "了",
+        "startMs": 31420,
+        "endMs": 31560
+      },
+      {
+        "text": "更",
+        "startMs": 31560,
+        "endMs": 31780
+      },
+      {
+        "text": "强",
+        "startMs": 31780,
+        "endMs": 32000
+      },
+      {
+        "text": "的",
+        "startMs": 32000,
+        "endMs": 32140
+      },
+      {
+        "text": "活",
+        "startMs": 32140,
+        "endMs": 32300
+      },
+      {
+        "text": "跃",
+        "startMs": 32300,
+        "endMs": 32440
+      },
+      {
+        "text": "度",
+        "startMs": 32440,
+        "endMs": 32618
+      }
+    ]
+  },
+  {
+    "text": "但另一边新房市场也正在发生一个重要变化",
+    "startMs": 32821,
+    "endMs": 36120,
+    "tokens": [
+      {
+        "text": "但",
+        "startMs": 32821,
+        "endMs": 32900
+      },
+      {
+        "text": "另",
+        "startMs": 32900,
+        "endMs": 33060
+      },
+      {
+        "text": "一",
+        "startMs": 33060,
+        "endMs": 33160
+      },
+      {
+        "text": "边",
+        "startMs": 33160,
+        "endMs": 33300
+      },
+      {
+        "text": "新",
+        "startMs": 33300,
+        "endMs": 33680
+      },
+      {
+        "text": "房",
+        "startMs": 33680,
+        "endMs": 33900
+      },
+      {
+        "text": "市",
+        "startMs": 33900,
+        "endMs": 34080
+      },
+      {
+        "text": "场",
+        "startMs": 34080,
+        "endMs": 34260
+      },
+      {
+        "text": "也",
+        "startMs": 34260,
+        "endMs": 34400
+      },
+      {
+        "text": "正",
+        "startMs": 34400,
+        "endMs": 34560
+      },
+      {
+        "text": "在",
+        "startMs": 34560,
+        "endMs": 34720
+      },
+      {
+        "text": "发",
+        "startMs": 34720,
+        "endMs": 34920
+      },
+      {
+        "text": "生",
+        "startMs": 34920,
+        "endMs": 35100
+      },
+      {
+        "text": "一个",
+        "startMs": 35100,
+        "endMs": 35320
+      },
+      {
+        "text": "重要",
+        "startMs": 35320,
+        "endMs": 35620
+      },
+      {
+        "text": "变",
+        "startMs": 35620,
+        "endMs": 35860
+      },
+      {
+        "text": "化",
+        "startMs": 35860,
+        "endMs": 36120
+      }
+    ]
+  },
+  {
+    "text": "今年8月底商品住房销售制度迎来新的调整",
+    "startMs": 36443,
+    "endMs": 39901,
+    "tokens": [
+      {
+        "text": "今年",
+        "startMs": 36443,
+        "endMs": 36620
+      },
+      {
+        "text": "8",
+        "startMs": 36620,
+        "endMs": 36880
+      },
+      {
+        "text": "月",
+        "startMs": 36880,
+        "endMs": 37020
+      },
+      {
+        "text": "底",
+        "startMs": 37020,
+        "endMs": 37220
+      },
+      {
+        "text": "商",
+        "startMs": 37220,
+        "endMs": 37580
+      },
+      {
+        "text": "品",
+        "startMs": 37580,
+        "endMs": 37760
+      },
+      {
+        "text": "住",
+        "startMs": 37760,
+        "endMs": 37920
+      },
+      {
+        "text": "房",
+        "startMs": 37920,
+        "endMs": 38080
+      },
+      {
+        "text": "销",
+        "startMs": 38080,
+        "endMs": 38260
+      },
+      {
+        "text": "售",
+        "startMs": 38260,
+        "endMs": 38420
+      },
+      {
+        "text": "制",
+        "startMs": 38420,
+        "endMs": 38620
+      },
+      {
+        "text": "度",
+        "startMs": 38620,
+        "endMs": 38760
+      },
+      {
+        "text": "迎",
+        "startMs": 38760,
+        "endMs": 39000
+      },
+      {
+        "text": "来",
+        "startMs": 39000,
+        "endMs": 39140
+      },
+      {
+        "text": "新",
+        "startMs": 39140,
+        "endMs": 39420
+      },
+      {
+        "text": "的",
+        "startMs": 39420,
+        "endMs": 39560
+      },
+      {
+        "text": "调",
+        "startMs": 39560,
+        "endMs": 39720
+      },
+      {
+        "text": "整",
+        "startMs": 39720,
+        "endMs": 39901
+      }
+    ]
+  },
+  {
+    "text": "其中一个重要方向就是有序推进现房销售,",
+    "startMs": 40064,
+    "endMs": 43414,
+    "tokens": [
+      {
+        "text": "其",
+        "startMs": 40064,
+        "endMs": 40183
+      },
+      {
+        "text": "中",
+        "startMs": 40183,
+        "endMs": 40323
+      },
+      {
+        "text": "一个",
+        "startMs": 40323,
+        "endMs": 40503
+      },
+      {
+        "text": "重要",
+        "startMs": 40503,
+        "endMs": 40723
+      },
+      {
+        "text": "方",
+        "startMs": 40723,
+        "endMs": 41003
+      },
+      {
+        "text": "向",
+        "startMs": 41003,
+        "endMs": 41223
+      },
+      {
+        "text": "就是",
+        "startMs": 41223,
+        "endMs": 41583
+      },
+      {
+        "text": "有",
+        "startMs": 41583,
+        "endMs": 41843
+      },
+      {
+        "text": "序",
+        "startMs": 41843,
+        "endMs": 42043
+      },
+      {
+        "text": "推",
+        "startMs": 42043,
+        "endMs": 42303
+      },
+      {
+        "text": "进",
+        "startMs": 42303,
+        "endMs": 42483
+      },
+      {
+        "text": "现",
+        "startMs": 42483,
+        "endMs": 42803
+      },
+      {
+        "text": "房",
+        "startMs": 42803,
+        "endMs": 42983
+      },
+      {
+        "text": "销",
+        "startMs": 42983,
+        "endMs": 43163
+      },
+      {
+        "text": "售,",
+        "startMs": 43163,
+        "endMs": 43414
+      }
+    ]
+  },
+  {
+    "text": "同时加强预售资金监管,",
+    "startMs": 43578,
+    "endMs": 45736,
+    "tokens": [
+      {
+        "text": "同",
+        "startMs": 43578,
+        "endMs": 43683
+      },
+      {
+        "text": "时",
+        "startMs": 43683,
+        "endMs": 43903
+      },
+      {
+        "text": "加",
+        "startMs": 43903,
+        "endMs": 44203
+      },
+      {
+        "text": "强",
+        "startMs": 44203,
+        "endMs": 44423
+      },
+      {
+        "text": "预",
+        "startMs": 44423,
+        "endMs": 44703
+      },
+      {
+        "text": "售",
+        "startMs": 44703,
+        "endMs": 44923
+      },
+      {
+        "text": "资",
+        "startMs": 44923,
+        "endMs": 45163
+      },
+      {
+        "text": "金",
+        "startMs": 45163,
+        "endMs": 45323
+      },
+      {
+        "text": "监",
+        "startMs": 45323,
+        "endMs": 45503
+      },
+      {
+        "text": "管,",
+        "startMs": 45503,
+        "endMs": 45736
+      }
+    ]
+  },
+  {
+    "text": "说得直白一点,",
+    "startMs": 45888,
+    "endMs": 46836,
+    "tokens": [
+      {
+        "text": "说",
+        "startMs": 45888,
+        "endMs": 46043
+      },
+      {
+        "text": "得",
+        "startMs": 46043,
+        "endMs": 46163
+      },
+      {
+        "text": "直",
+        "startMs": 46163,
+        "endMs": 46323
+      },
+      {
+        "text": "白",
+        "startMs": 46323,
+        "endMs": 46483
+      },
+      {
+        "text": "一点,",
+        "startMs": 46483,
+        "endMs": 46836
+      }
+    ]
+  },
+  {
+    "text": "就是让未来买新房这件事越来越重视看得见的品质,",
+    "startMs": 47159,
+    "endMs": 51157,
+    "tokens": [
+      {
+        "text": "就是",
+        "startMs": 47159,
+        "endMs": 47323
+      },
+      {
+        "text": "让",
+        "startMs": 47323,
+        "endMs": 47523
+      },
+      {
+        "text": "未",
+        "startMs": 47523,
+        "endMs": 47723
+      },
+      {
+        "text": "来",
+        "startMs": 47723,
+        "endMs": 47903
+      },
+      {
+        "text": "买",
+        "startMs": 47903,
+        "endMs": 48123
+      },
+      {
+        "text": "新",
+        "startMs": 48123,
+        "endMs": 48363
+      },
+      {
+        "text": "房",
+        "startMs": 48363,
+        "endMs": 48563
+      },
+      {
+        "text": "这",
+        "startMs": 48563,
+        "endMs": 48743
+      },
+      {
+        "text": "件",
+        "startMs": 48743,
+        "endMs": 48883
+      },
+      {
+        "text": "事",
+        "startMs": 48883,
+        "endMs": 49063
+      },
+      {
+        "text": "越",
+        "startMs": 49063,
+        "endMs": 49423
+      },
+      {
+        "text": "来",
+        "startMs": 49423,
+        "endMs": 49603
+      },
+      {
+        "text": "越",
+        "startMs": 49603,
+        "endMs": 49803
+      },
+      {
+        "text": "重",
+        "startMs": 49803,
+        "endMs": 49983
+      },
+      {
+        "text": "视",
+        "startMs": 49983,
+        "endMs": 50183
+      },
+      {
+        "text": "看",
+        "startMs": 50183,
+        "endMs": 50403
+      },
+      {
+        "text": "得",
+        "startMs": 50403,
+        "endMs": 50523
+      },
+      {
+        "text": "见",
+        "startMs": 50523,
+        "endMs": 50643
+      },
+      {
+        "text": "的",
+        "startMs": 50643,
+        "endMs": 50743
+      },
+      {
+        "text": "品",
+        "startMs": 50743,
+        "endMs": 50923
+      },
+      {
+        "text": "质,",
+        "startMs": 50923,
+        "endMs": 51157
+      }
+    ]
+  },
+  {
+    "text": "以及最终能不能顺利交付。",
+    "startMs": 51308,
+    "endMs": 53153,
+    "tokens": [
+      {
+        "text": "以及",
+        "startMs": 51308,
+        "endMs": 51483
+      },
+      {
+        "text": "最",
+        "startMs": 51483,
+        "endMs": 51663
+      },
+      {
+        "text": "终",
+        "startMs": 51663,
+        "endMs": 51863
+      },
+      {
+        "text": "能",
+        "startMs": 51863,
+        "endMs": 52123
+      },
+      {
+        "text": "不能",
+        "startMs": 52123,
+        "endMs": 52303
+      },
+      {
+        "text": "顺",
+        "startMs": 52303,
+        "endMs": 52643
+      },
+      {
+        "text": "利",
+        "startMs": 52643,
+        "endMs": 52763
+      },
+      {
+        "text": "交",
+        "startMs": 52763,
+        "endMs": 52943
+      },
+      {
+        "text": "付。",
+        "startMs": 52943,
+        "endMs": 53153
+      }
+    ]
+  },
+  {
+    "text": "那么问题来了,",
+    "startMs": 53391,
+    "endMs": 54169,
+    "tokens": [
+      {
+        "text": "那么",
+        "startMs": 53391,
+        "endMs": 53543
+      },
+      {
+        "text": "问题",
+        "startMs": 53543,
+        "endMs": 53763
+      },
+      {
+        "text": "来了,",
+        "startMs": 53763,
+        "endMs": 54169
+      }
+    ]
+  },
+  {
+    "text": "2027年我们到底应该买新房还是买二手房?",
+    "startMs": 54334,
+    "endMs": 58046,
+    "tokens": [
+      {
+        "text": "20",
+        "startMs": 54334,
+        "endMs": 54503
+      },
+      {
+        "text": "27",
+        "startMs": 54503,
+        "endMs": 54803
+      },
+      {
+        "text": "年",
+        "startMs": 54803,
+        "endMs": 55103
+      },
+      {
+        "text": "我们",
+        "startMs": 55103,
+        "endMs": 55443
+      },
+      {
+        "text": "到底",
+        "startMs": 55443,
+        "endMs": 55923
+      },
+      {
+        "text": "应",
+        "startMs": 55923,
+        "endMs": 56203
+      },
+      {
+        "text": "该",
+        "startMs": 56203,
+        "endMs": 56303
+      },
+      {
+        "text": "买",
+        "startMs": 56303,
+        "endMs": 56463
+      },
+      {
+        "text": "新",
+        "startMs": 56463,
+        "endMs": 56723
+      },
+      {
+        "text": "房",
+        "startMs": 56723,
+        "endMs": 56963
+      },
+      {
+        "text": "还是",
+        "startMs": 56963,
+        "endMs": 57243
+      },
+      {
+        "text": "买",
+        "startMs": 57243,
+        "endMs": 57483
+      },
+      {
+        "text": "二",
+        "startMs": 57483,
+        "endMs": 57683
+      },
+      {
+        "text": "手",
+        "startMs": 57683,
+        "endMs": 57803
+      },
+      {
+        "text": "房?",
+        "startMs": 57803,
+        "endMs": 58046
+      }
+    ]
+  },
+  {
+    "text": "我的观点是要分三种情况。",
+    "startMs": 58258,
+    "endMs": 60271,
+    "tokens": [
+      {
+        "text": "我的",
+        "startMs": 58258,
+        "endMs": 58423
+      },
+      {
+        "text": "观",
+        "startMs": 58423,
+        "endMs": 58563
+      },
+      {
+        "text": "点",
+        "startMs": 58563,
+        "endMs": 58703
+      },
+      {
+        "text": "是",
+        "startMs": 58703,
+        "endMs": 58903
+      },
+      {
+        "text": "要",
+        "startMs": 58903,
+        "endMs": 59243
+      },
+      {
+        "text": "分",
+        "startMs": 59243,
+        "endMs": 59403
+      },
+      {
+        "text": "三",
+        "startMs": 59403,
+        "endMs": 59683
+      },
+      {
+        "text": "种",
+        "startMs": 59683,
+        "endMs": 59863
+      },
+      {
+        "text": "情况。",
+        "startMs": 59863,
+        "endMs": 60271
+      }
+    ]
+  }
+]

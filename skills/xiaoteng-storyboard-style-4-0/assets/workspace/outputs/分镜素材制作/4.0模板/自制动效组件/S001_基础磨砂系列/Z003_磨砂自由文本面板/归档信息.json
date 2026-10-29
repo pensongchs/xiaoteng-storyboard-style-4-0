@@ -1,0 +1,19 @@
+{
+  "id": "Z003",
+  "name": "磨砂自由文本面板",
+  "seriesId": "S001",
+  "sourceEntry": "源码/组件.tsx",
+  "validation": {
+    "archiveVerified": true,
+    "platform": "macOS",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 150,
+    "audio": false,
+    "decode": true,
+    "previewSha256": "712e15fa1992f6a9d91d4cafe2283c32226c9b23bffde5aa0f7800d07dffb934",
+    "userApproved": false
+  },
+  "dependencies": "共享工程package.json与scripts/font-sources.json"
+}

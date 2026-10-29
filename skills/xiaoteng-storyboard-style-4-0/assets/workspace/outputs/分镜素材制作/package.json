@@ -1,0 +1,8 @@
+{
+  "name": "student-review-station",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "station": "vite --host 127.0.0.1 --port 4328"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "storyboard-glass-4.0-student",
+  "fonts": [
+    {
+      "file": "AlibabaHealthFont2.0CN-45R.ttf",
+      "sha256": "f912d45485197d2e276acef24c88d9923e0edfbda78bfcbe8e4198cf65702f11"
+    },
+    {
+      "file": "AlibabaHealthFont2.0CN-85B.ttf",
+      "sha256": "96178b55ee17b1d0f498866c86d4231cd740b2a9752af8e6aaf4bc626ff97bcb"
+    }
+  ],
+  "assets": [
+    {
+      "path": "remotion-test/public/示例素材/glass/neutral.jpg",
+      "sha256": "e35c8c8136cdd2ebf866b49a368f0c5823eec61d7455a833e798eda0b2281cdf"
+    }
+  ],
+  "core": [
+    {
+      "path": "4.0模板/参数.ts",
+      "sha256": "836111dc9d2d98dafc14e2a322dcb1169deb68852fe35c2fbf3b503369c770ba"
+    },
+    {
+      "path": "4.0模板/组件/Clock40.ts",
+      "sha256": "e69d70a59618cedd7f1fe1a2ca4cb98fceeea579f3b12f841a0f3757cb163964"
+    },
+    {
+      "path": "4.0模板/组件/Editorial40.tsx",
+      "sha256": "3c1a547a3a202b3babbd0830e81e36a951c16f059c0f54f0c3420ceb61e1b098"
+    },
+    {
+      "path": "4.0模板/组件/Frost40.tsx",
+      "sha256": "aa0ebfa3d5ee3f30363cff07d1045275fec56915ecd0f123b1198343072ba3b1"
+    },
+    {
+      "path": "4.0模板/组件/Glass40.tsx",
+      "sha256": "1fbcec5d9e81998a501c2929889da987df5eb847ede0706e21df9b8abdb2fe6a"
+    },
+    {
+      "path": "4.0模板/组件/Library40.tsx",
+      "sha256": "4135353c8247bdee8c973f1226091cd98df0311be68f3cb71dc282f3d2e87f9f"
+    },
+    {
+      "path": "4.0模板/组件/LibraryContent40.tsx",
+      "sha256": "3e9f15ec393ae038748698cfb1f1b5621c525ac5576c225f39a65d68432c0b17"
+    },
+    {
+      "path": "4.0模板/组件/Shaders40.tsx",
+      "sha256": "f1ee359d29fd243892cdd87dd6f299f67a3ceff3066fd940a3abcaee9d2e6e7d"
+    },
+    {
+      "path": "4.0模板/组件/Stage40.tsx",
+      "sha256": "d460e6f428d0eb1bcab42d0b3dd782f7a1cb7e6207ace8d011029cac08995d9c"
+    },
+    {
+      "path": "4.0模板/组件/StudentExtras40.tsx",
+      "sha256": "056aaa120b6603ebb7dd7eae0f7662ee8abef2b96ac46e7f02f81d3826a05f92"
+    },
+    {
+      "path": "4.0模板/组件/Style40.tsx",
+      "sha256": "10a380f72b10a1e43eebbb02894278d40e02c11f5c3d0269afcdfc366c857e02"
+    }
+  ]
+}

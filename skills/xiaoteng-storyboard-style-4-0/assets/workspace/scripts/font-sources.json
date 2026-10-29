@@ -1,0 +1,20 @@
+{
+  "url": "https://alijk-cdn-assets.oss-cn-beijing.aliyuncs.com/Alibaba%20Health%20Font%202.0.zip",
+  "sha256": "49afbbf1efc4906b9cbc9fed1fb71d3419f600138313d9bd9e452ec0583f5dc8",
+  "files": [
+    {
+      "file": "AlibabaHealthFont2.0CN-45R.ttf",
+      "sha256": "f912d45485197d2e276acef24c88d9923e0edfbda78bfcbe8e4198cf65702f11"
+    },
+    {
+      "file": "AlibabaHealthFont2.0CN-85B.ttf",
+      "sha256": "96178b55ee17b1d0f498866c86d4231cd740b2a9752af8e6aaf4bc626ff97bcb"
+    }
+  ],
+  "publisher": "阿里健康与方正字库",
+  "license": {
+    "file": "官方字体使用说明.pdf",
+    "suffix": ".pdf",
+    "sha256": "96a38d831b57563636dd7826dd31045e51d937edff7e3b41aa677141808357ec"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "sharedLibraryItems": 45,
+  "selfMadeComponents": 18,
+  "example": {
+    "durationSeconds": 60,
+    "fps": 30,
+    "frames": 1800,
+    "width": 1920,
+    "height": 1080,
+    "audio": false,
+    "decode": true,
+    "blackFrames": 0,
+    "sourceFrameStability": true,
+    "encodingContinuity": true,
+    "distinctSharedEffects": 5,
+    "sceneTransitions": 8,
+    "carouselImages": 2,
+    "sha256": "9257496c60c254dc4aaba9ac83250065f08fd3f05c01cb98b70c58c364c8c2d5"
+  },
+  "componentPreviews": {
+    "passed": true,
+    "components": [
+      {
+        "id": "Z001",
+        "frames": 150,
+        "videoSha256": "bb4e2be184c1edabd2496af7af5f9ff756371a068a15e726c3c387187cbaafb8"
+      },
+      {
+        "id": "Z002",
+        "frames": 150,
+        "videoSha256": "af5136383827084c7012ecc44e5f96887b6688a88195994d4ff87fbd89a96845"
+      },
+      {
+        "id": "Z003",
+        "frames": 150,
+        "videoSha256": "712e15fa1992f6a9d91d4cafe2283c32226c9b23bffde5aa0f7800d07dffb934"
+      },
+      {
+        "id": "Z004",
+        "frames": 135,
+        "videoSha256": "a8fb7b335dada53dc23a9f8d252cc24defb0e976378e7512b03fb12df3d9a64a"
+      },
+      {
+        "id": "Z005",
+        "frames": 135,
+        "videoSha256": "e4465bbbaf7f8b964c7c1dcdaa4145f33ce1698ad5e4160fee6cb3f1a26a2e70"
+      },
+      {
+        "id": "Z006",
+        "frames": 135,
+        "videoSha256": "aa12cadfc73a521298fbd7de01c993a492008ac57b1e15a499738855e0877c28"
+      },
+      {
+        "id": "Z007",
+        "frames": 135,
+        "videoSha256": "0acb96e14a156b208da3918d1522c0eb9ba0c93aa619359f2fd7350b58cca19b"
+      },
+      {
+        "id": "Z008",
+        "frames": 135,
+        "videoSha256": "2908d929348a69843f6bf184f84b4bf2fa8e187ea83077a6d20e20e6bf23e39c"
+      },
+      {
+        "id": "Z009",
+        "frames": 135,
+        "videoSha256": "c9b1526d29e4d4ed0312bff301ed01d2c52c0a035dc56b6f3ee822af5eb3df03"
+      },
+      {
+        "id": "Z010",
+        "frames": 135,
+        "videoSha256": "5c55940159de546efcc28caf5cfda7ae191bb0f17cb7bea9d1387bab746ba486"
+      },
+      {
+        "id": "Z011",
+        "frames": 135,
+        "videoSha256": "6c3d788eeb93b009ae85eaa2af2e568bf44a9651f98e3aceacc256e69e9299d0"
+      },
+      {
+        "id": "Z012",
+        "frames": 135,
+        "videoSha256": "55fd0c254f96f58c923ce176ddc1cd4a34d36a021a494d4608138607823767a1"
+      },
+      {
+        "id": "Z013",
+        "frames": 135,
+        "videoSha256": "cba461bedf506167690cbea9ac6c275aff540bc05e3943adefa83cc9fa873529"
+      },
+      {
+        "id": "Z014",
+        "frames": 135,
+        "videoSha256": "65e2b72d57b097faa8452d83c1e740bd714f0449cb4f8efcecc7f7472aa825de"
+      },
+      {
+        "id": "Z015",
+        "frames": 135,
+        "videoSha256": "8328860b736789fd18cb9a270c004bb7dc82431bfa603f8b112a1c4e41eaa11f"
+      },
+      {
+        "id": "Z016",
+        "frames": 135,
+        "videoSha256": "f1d7ab96b83c8a153aca4d6f23d2134ae42c1a4d47ba2ece54118991302eca2e"
+      },
+      {
+        "id": "Z017",
+        "frames": 135,
+        "videoSha256": "c48026cf0abfe74e5a02273b350b69c51f2ab3d05b640de9adf8a0ef2ec89a6c"
+      },
+      {
+        "id": "Z018",
+        "frames": 135,
+        "videoSha256": "b98e67a3ccd0c0aeb1f8e709f24be965640a8156138524499b3a92a3a46d6422"
+      }
+    ],
+    "uniqueFramesWithTripleCapture": 1220,
+    "reusedIdenticalDomStates": 1273
+  },
+  "review": {
+    "built": true,
+    "browserPageLoaded": true,
+    "originalVideoDurationSeconds": 60,
+    "linksSourceVideoOnly": true,
+    "videoBackups": false,
+    "sessionDataDistributed": false
+  },
+  "platforms": {
+    "macOS": "完整示例、组件预览、审片台实际验证通过",
+    "Windows": "文件名、驱动器路径、中文空格、启动及Python定位代码检查通过；尚未在Windows设备完整渲染"
+  }
+}

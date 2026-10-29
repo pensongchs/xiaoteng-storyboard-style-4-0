@@ -1,0 +1,19 @@
+{
+  "id": "Z008",
+  "name": "侧标强调框",
+  "seriesId": "S002",
+  "sourceEntry": "源码/组件.tsx",
+  "validation": {
+    "archiveVerified": true,
+    "platform": "macOS",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 135,
+    "audio": false,
+    "decode": true,
+    "previewSha256": "2908d929348a69843f6bf184f84b4bf2fa8e187ea83077a6d20e20e6bf23e39c",
+    "userApproved": false
+  },
+  "dependencies": "共享工程package.json与scripts/font-sources.json"
+}

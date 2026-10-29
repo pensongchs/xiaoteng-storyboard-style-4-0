@@ -1,0 +1,535 @@
+{
+  "title": "学员示例",
+  "assetRoot": "示例素材",
+  "durationFrames": 1800,
+  "scenes": [
+    {
+      "id": "opening",
+      "startMs": 0,
+      "endMs": 3869,
+      "heading": "买房，先看真正的分水岭",
+      "background": "tradeoff.mp4",
+      "index": 2
+    },
+    {
+      "id": "division",
+      "startMs": 3869,
+      "endMs": 9438,
+      "heading": "房子的竞争力正在分化",
+      "background": "division.mp4",
+      "index": 1
+    },
+    {
+      "id": "risk",
+      "startMs": 9438,
+      "endMs": 15755,
+      "heading": "别只盯着眼前的便宜",
+      "background": "分化风险.png",
+      "index": 4
+    },
+    {
+      "id": "data",
+      "startMs": 15755,
+      "endMs": 28173,
+      "heading": "交易走向，出现分化",
+      "background": "data.mp4",
+      "index": 2
+    },
+    {
+      "id": "activity",
+      "startMs": 28173,
+      "endMs": 33300,
+      "heading": "从交易数据看活跃度",
+      "background": null,
+      "index": 3
+    },
+    {
+      "id": "reform",
+      "startMs": 33300,
+      "endMs": 40064,
+      "heading": "新房市场，也在改变",
+      "background": "reform.mp4",
+      "index": 2
+    },
+    {
+      "id": "policy",
+      "startMs": 40064,
+      "endMs": 47903,
+      "heading": "看得见，也要管得住",
+      "background": "policy.mp4",
+      "index": 1
+    },
+    {
+      "id": "quality",
+      "startMs": 47903,
+      "endMs": 54334,
+      "heading": "看得见的品质，顺利交付",
+      "background": null,
+      "index": 2
+    },
+    {
+      "id": "choice",
+      "startMs": 54334,
+      "endMs": 60000,
+      "heading": "2027年，到底怎么选？",
+      "background": "choice.mp4",
+      "index": 2
+    }
+  ],
+  "units": [
+    {
+      "id": "S01",
+      "scene": "opening",
+      "component": "Z011",
+      "atMs": 0,
+      "endMs": 3869,
+      "content": {
+        "title": "2027买房"
+      },
+      "x": 690,
+      "y": 345,
+      "size": 48,
+      "accent": "#f3ddba",
+      "cueIndex": 0
+    },
+    {
+      "id": "S02",
+      "scene": "division",
+      "component": "Z005",
+      "atMs": 5160,
+      "endMs": 9438,
+      "content": {
+        "title": "越来越好",
+        "highlight": "好"
+      },
+      "x": 72,
+      "y": 295,
+      "size": 48,
+      "accent": "#91cbb2",
+      "cueIndex": 2,
+      "word": "变得"
+    },
+    {
+      "id": "S03",
+      "scene": "division",
+      "component": "Z008",
+      "atMs": 8180,
+      "endMs": 9438,
+      "content": {
+        "title": "竞争力减弱",
+        "highlight": "减弱"
+      },
+      "x": 72,
+      "y": 465,
+      "size": 48,
+      "accent": "#f7a18d",
+      "cueIndex": 3,
+      "word": "逐渐"
+    },
+    {
+      "id": "S04",
+      "scene": "risk",
+      "component": "Z001",
+      "atMs": 10820,
+      "endMs": 15755,
+      "content": {
+        "title": "买贵"
+      },
+      "x": 72,
+      "y": 250,
+      "size": 43,
+      "hue": 2,
+      "w": 360,
+      "cueIndex": 4,
+      "word": "买贵"
+    },
+    {
+      "id": "S05",
+      "scene": "risk",
+      "component": "Z001",
+      "atMs": 12100,
+      "endMs": 15755,
+      "content": {
+        "title": "捡便宜"
+      },
+      "x": 72,
+      "y": 430,
+      "size": 43,
+      "hue": 0,
+      "w": 360,
+      "cueIndex": 5,
+      "word": "捡"
+    },
+    {
+      "id": "S06",
+      "scene": "risk",
+      "component": "Z008",
+      "atMs": 14400,
+      "endMs": 15755,
+      "content": {
+        "title": "难转手",
+        "highlight": "难"
+      },
+      "x": 475,
+      "y": 265,
+      "size": 52,
+      "accent": "#f7a18d",
+      "illustration": {
+        "kind": "graphic",
+        "symbol": "guard"
+      },
+      "cueIndex": 6,
+      "word": "难转手"
+    },
+    {
+      "id": "S07",
+      "scene": "data",
+      "component": "Z001",
+      "atMs": 16882,
+      "endMs": 28173,
+      "content": {
+        "title": "2026年1—9月"
+      },
+      "x": 72,
+      "y": 210,
+      "size": 27,
+      "hue": 2,
+      "w": 550,
+      "cueIndex": 8
+    },
+    {
+      "id": "S08",
+      "scene": "data",
+      "component": "Z004",
+      "atMs": 19000,
+      "endMs": 28173,
+      "content": {
+        "title": "新建商品房"
+      },
+      "x": 72,
+      "y": 330,
+      "size": 36,
+      "accent": "#f7a18d",
+      "cueIndex": 9,
+      "word": "新建商品房"
+    },
+    {
+      "id": "S09",
+      "scene": "data",
+      "component": "Z004",
+      "atMs": 23140,
+      "endMs": 28173,
+      "content": {
+        "title": "二手房"
+      },
+      "x": 72,
+      "y": 480,
+      "size": 36,
+      "accent": "#91cbb2",
+      "cueIndex": 10,
+      "word": "二手房"
+    },
+    {
+      "id": "S10",
+      "scene": "activity",
+      "component": "Z014",
+      "atMs": 28700,
+      "endMs": 33300,
+      "content": {
+        "title": "交易数据"
+      },
+      "x": 72,
+      "y": 210,
+      "size": 36,
+      "accent": "#d4d3cc",
+      "cueIndex": 12,
+      "word": "交易数据"
+    },
+    {
+      "id": "S11",
+      "scene": "reform",
+      "component": "Z011",
+      "atMs": 33300,
+      "endMs": 40064,
+      "content": {
+        "title": "新房市场"
+      },
+      "x": 72,
+      "y": 250,
+      "size": 48,
+      "accent": "#f3ddba",
+      "cueIndex": 14,
+      "word": "新房"
+    },
+    {
+      "id": "S12",
+      "scene": "reform",
+      "component": "Z001",
+      "atMs": 36620,
+      "endMs": 40064,
+      "content": {
+        "title": "8月底"
+      },
+      "x": 790,
+      "y": 315,
+      "size": 64,
+      "hue": 0,
+      "w": 400,
+      "cueIndex": 15,
+      "word": "8"
+    },
+    {
+      "id": "S13",
+      "scene": "policy",
+      "component": "Z002",
+      "atMs": 42483,
+      "endMs": 47903,
+      "content": {
+        "title": "现房销售",
+        "body": "有序推进"
+      },
+      "x": 72,
+      "y": 340,
+      "size": 34,
+      "hue": 2,
+      "w": 510,
+      "h": 220,
+      "cueIndex": 16,
+      "word": "现房销售"
+    },
+    {
+      "id": "S14",
+      "scene": "policy",
+      "component": "Z002",
+      "atMs": 44423,
+      "endMs": 47903,
+      "content": {
+        "title": "预售资金",
+        "body": "加强监管"
+      },
+      "x": 655,
+      "y": 340,
+      "size": 34,
+      "hue": 1,
+      "w": 510,
+      "h": 220,
+      "cueIndex": 17,
+      "word": "预售资金"
+    },
+    {
+      "id": "S15",
+      "scene": "quality",
+      "component": "Z011",
+      "atMs": 48123,
+      "endMs": 54334,
+      "content": {
+        "title": "未来新房"
+      },
+      "x": 72,
+      "y": 200,
+      "size": 31,
+      "accent": "#f3ddba",
+      "cueIndex": 19,
+      "word": "新房"
+    },
+    {
+      "id": "S16",
+      "scene": "quality",
+      "component": "Z005",
+      "atMs": 50183,
+      "endMs": 54334,
+      "content": {
+        "title": "看得见"
+      },
+      "x": 72,
+      "y": 350,
+      "size": 38,
+      "accent": "#91cbb2",
+      "cueIndex": 19,
+      "word": "看得见"
+    },
+    {
+      "id": "S17",
+      "scene": "quality",
+      "component": "Z004",
+      "atMs": 50743,
+      "endMs": 54334,
+      "content": {
+        "title": "居住品质",
+        "highlight": "品质"
+      },
+      "x": 72,
+      "y": 480,
+      "size": 38,
+      "accent": "#f3ddba",
+      "illustration": {
+        "kind": "none"
+      },
+      "cueIndex": 19,
+      "word": "品质"
+    },
+    {
+      "id": "S18",
+      "scene": "quality",
+      "component": "Z001",
+      "atMs": 52303,
+      "endMs": 54334,
+      "content": {
+        "title": "顺利交付"
+      },
+      "x": 72,
+      "y": 600,
+      "size": 29,
+      "hue": 0,
+      "w": 450,
+      "cueIndex": 20,
+      "word": "顺利交付"
+    },
+    {
+      "id": "S19",
+      "scene": "choice",
+      "component": "Z001",
+      "atMs": 56463,
+      "endMs": 60000,
+      "content": {
+        "title": "新房"
+      },
+      "x": 340,
+      "y": 320,
+      "size": 56,
+      "hue": 2,
+      "w": 350,
+      "cueIndex": 22,
+      "word": "新房"
+    },
+    {
+      "id": "S20",
+      "scene": "choice",
+      "component": "Z004",
+      "atMs": 57483,
+      "endMs": 60000,
+      "content": {
+        "title": "二手房"
+      },
+      "x": 668,
+      "y": 320,
+      "size": 56,
+      "accent": "#95c6ad",
+      "cueIndex": 22,
+      "word": "二手房"
+    }
+  ],
+  "mg": [
+    {
+      "id": "M01",
+      "scene": "division",
+      "name": "竞争力双向分化图",
+      "atMs": 5160
+    },
+    {
+      "id": "M02",
+      "scene": "data",
+      "name": "同尺度双向面积柱图",
+      "atMs": 19000
+    },
+    {
+      "id": "M03",
+      "scene": "policy",
+      "name": "资金进入监管闭环",
+      "atMs": 44423
+    },
+    {
+      "id": "M04",
+      "scene": "quality",
+      "name": "品质核验与交付勾选",
+      "atMs": 50743
+    },
+    {
+      "id": "M05",
+      "scene": "choice",
+      "name": "两种选择汇入需求判断",
+      "atMs": 57483
+    }
+  ],
+  "times": {
+    "focus": [
+      2380,
+      3140
+    ],
+    "electric": [
+      30014,
+      32140
+    ],
+    "month": 36620,
+    "selector": [
+      41583,
+      42483,
+      44923
+    ],
+    "numbers": [
+      21560,
+      25860
+    ],
+    "cases": 59403
+  },
+  "carousel": {
+    "scene": "quality",
+    "kind": "032",
+    "items": [
+      {
+        "file": "现房交付.png",
+        "label": "建筑实景",
+        "description": "看得见的建筑与居住细节",
+        "atMs": 47903
+      },
+      {
+        "file": "reform-photo.jpg",
+        "label": "建造到交付",
+        "description": "建造进度，最终要落实到按期交付",
+        "atMs": 52303
+      }
+    ]
+  },
+  "transitions": [
+    {
+      "atMs": 3869,
+      "kind": "wipe",
+      "frames": 12
+    },
+    {
+      "atMs": 9438,
+      "kind": "iris",
+      "frames": 12
+    },
+    {
+      "atMs": 15755,
+      "kind": "wipe",
+      "frames": 12
+    },
+    {
+      "atMs": 28173,
+      "kind": "iris",
+      "frames": 12
+    },
+    {
+      "atMs": 33300,
+      "kind": "wipe",
+      "frames": 12
+    },
+    {
+      "atMs": 40064,
+      "kind": "iris",
+      "frames": 12
+    },
+    {
+      "atMs": 47903,
+      "kind": "wipe",
+      "frames": 12
+    },
+    {
+      "atMs": 54334,
+      "kind": "iris",
+      "frames": 12
+    }
+  ]
+}

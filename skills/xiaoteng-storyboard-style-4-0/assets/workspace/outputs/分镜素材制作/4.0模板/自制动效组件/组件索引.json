@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "series": [
+    {
+      "id": "S001",
+      "name": "基础磨砂系列",
+      "path": "S001_基础磨砂系列",
+      "preview": "S001_基础磨砂系列/系列总览.mp4"
+    },
+    {
+      "id": "S002",
+      "name": "玻璃关键词系列",
+      "path": "S002_玻璃关键词系列",
+      "preview": "S002_玻璃关键词系列/系列总览.mp4"
+    }
+  ],
+  "components": [
+    {
+      "id": "Z001",
+      "name": "磨砂短句标签",
+      "seriesId": "S001",
+      "path": "S001_基础磨砂系列/Z001_磨砂短句标签",
+      "entryPoint": "S001_基础磨砂系列/Z001_磨砂短句标签/入口.tsx",
+      "preview": "S001_基础磨砂系列/Z001_磨砂短句标签/预览.mp4",
+      "poster": "S001_基础磨砂系列/Z001_磨砂短句标签/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z002",
+      "name": "磨砂信息卡",
+      "seriesId": "S001",
+      "path": "S001_基础磨砂系列/Z002_磨砂信息卡",
+      "entryPoint": "S001_基础磨砂系列/Z002_磨砂信息卡/入口.tsx",
+      "preview": "S001_基础磨砂系列/Z002_磨砂信息卡/预览.mp4",
+      "poster": "S001_基础磨砂系列/Z002_磨砂信息卡/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z003",
+      "name": "磨砂自由文本面板",
+      "seriesId": "S001",
+      "path": "S001_基础磨砂系列/Z003_磨砂自由文本面板",
+      "entryPoint": "S001_基础磨砂系列/Z003_磨砂自由文本面板/入口.tsx",
+      "preview": "S001_基础磨砂系列/Z003_磨砂自由文本面板/预览.mp4",
+      "poster": "S001_基础磨砂系列/Z003_磨砂自由文本面板/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z004",
+      "name": "基础关键词框",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z004_基础关键词框",
+      "entryPoint": "S002_玻璃关键词系列/Z004_基础关键词框/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z004_基础关键词框/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z004_基础关键词框/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z005",
+      "name": "渐变重点框",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z005_渐变重点框",
+      "entryPoint": "S002_玻璃关键词系列/Z005_渐变重点框/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z005_渐变重点框/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z005_渐变重点框/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z006",
+      "name": "图标关键词框",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z006_图标关键词框",
+      "entryPoint": "S002_玻璃关键词系列/Z006_图标关键词框/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z006_图标关键词框/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z006_图标关键词框/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z007",
+      "name": "序号关键词框",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z007_序号关键词框",
+      "entryPoint": "S002_玻璃关键词系列/Z007_序号关键词框/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z007_序号关键词框/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z007_序号关键词框/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z008",
+      "name": "侧标强调框",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z008_侧标强调框",
+      "entryPoint": "S002_玻璃关键词系列/Z008_侧标强调框/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z008_侧标强调框/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z008_侧标强调框/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z009",
+      "name": "双行关键词框",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z009_双行关键词框",
+      "entryPoint": "S002_玻璃关键词系列/Z009_双行关键词框/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z009_双行关键词框/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z009_双行关键词框/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z010",
+      "name": "对话短语框",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z010_对话短语框",
+      "entryPoint": "S002_玻璃关键词系列/Z010_对话短语框/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z010_对话短语框/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z010_对话短语框/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z011",
+      "name": "书签关键词框",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z011_书签关键词框",
+      "entryPoint": "S002_玻璃关键词系列/Z011_书签关键词框/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z011_书签关键词框/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z011_书签关键词框/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z012",
+      "name": "关键词清单框",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z012_关键词清单框",
+      "entryPoint": "S002_玻璃关键词系列/Z012_关键词清单框/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z012_关键词清单框/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z012_关键词清单框/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z013",
+      "name": "组合重点框",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z013_组合重点框",
+      "entryPoint": "S002_玻璃关键词系列/Z013_组合重点框/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z013_组合重点框/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z013_组合重点框/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z014",
+      "name": "底部关键词条",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z014_底部关键词条",
+      "entryPoint": "S002_玻璃关键词系列/Z014_底部关键词条/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z014_底部关键词条/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z014_底部关键词条/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z015",
+      "name": "并列关键词框",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z015_并列关键词框",
+      "entryPoint": "S002_玻璃关键词系列/Z015_并列关键词框/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z015_并列关键词框/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z015_并列关键词框/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z016",
+      "name": "图片关键词框",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z016_图片关键词框",
+      "entryPoint": "S002_玻璃关键词系列/Z016_图片关键词框/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z016_图片关键词框/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z016_图片关键词框/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z017",
+      "name": "极简描边框",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z017_极简描边框",
+      "entryPoint": "S002_玻璃关键词系列/Z017_极简描边框/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z017_极简描边框/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z017_极简描边框/预览.png",
+      "userApproved": false,
+      "verified": true
+    },
+    {
+      "id": "Z018",
+      "name": "斜切重点框",
+      "seriesId": "S002",
+      "path": "S002_玻璃关键词系列/Z018_斜切重点框",
+      "entryPoint": "S002_玻璃关键词系列/Z018_斜切重点框/入口.tsx",
+      "preview": "S002_玻璃关键词系列/Z018_斜切重点框/预览.mp4",
+      "poster": "S002_玻璃关键词系列/Z018_斜切重点框/预览.png",
+      "userApproved": false,
+      "verified": true
+    }
+  ],
+  "matchingPolicy": "按每期文案选择关键词、语义配色、图片和说明图形，示例仅展示排版。"
+}

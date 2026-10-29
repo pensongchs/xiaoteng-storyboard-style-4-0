@@ -1,0 +1,19 @@
+{
+  "id": "Z017",
+  "name": "极简描边框",
+  "seriesId": "S002",
+  "sourceEntry": "源码/组件.tsx",
+  "validation": {
+    "archiveVerified": true,
+    "platform": "macOS",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 135,
+    "audio": false,
+    "decode": true,
+    "previewSha256": "c48026cf0abfe74e5a02273b350b69c51f2ab3d05b640de9adf8a0ef2ec89a6c",
+    "userApproved": false
+  },
+  "dependencies": "共享工程package.json与scripts/font-sources.json"
+}

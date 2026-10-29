@@ -1,0 +1,4 @@
+interface:
+  display_name: "小滕分镜风格4.0版"
+  short_description: "按字幕制作深色磨砂分镜视频，结合双库组件、图片轮播和画面转场，渲染后直接审片。"
+  default_prompt: "使用 $xiaoteng-storyboard-style-4-0，按我的文案和字幕制作4.0风格分镜视频，完成后打开本地审片台。"

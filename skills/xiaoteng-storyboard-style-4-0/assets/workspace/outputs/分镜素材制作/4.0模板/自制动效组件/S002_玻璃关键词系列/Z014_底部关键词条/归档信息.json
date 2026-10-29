@@ -1,0 +1,19 @@
+{
+  "id": "Z014",
+  "name": "底部关键词条",
+  "seriesId": "S002",
+  "sourceEntry": "源码/组件.tsx",
+  "validation": {
+    "archiveVerified": true,
+    "platform": "macOS",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 135,
+    "audio": false,
+    "decode": true,
+    "previewSha256": "65e2b72d57b097faa8452d83c1e740bd714f0449cb4f8efcecc7f7472aa825de",
+    "userApproved": false
+  },
+  "dependencies": "共享工程package.json与scripts/font-sources.json"
+}

@@ -1,0 +1,25 @@
+const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process');
+const {bundle}=require('@remotion/bundler');
+const {getCompositions,renderMedia,renderStill}=require('@remotion/renderer');
+const root=path.resolve(__dirname,'..'),group=path.join(root,'outputs/分镜素材制作'),template=path.join(group,'4.0模板'),library=path.join(template,'自制动效组件'),series=path.join(library,'S002_玻璃关键词系列');
+const internal=path.join(group,'分镜规划/学员示例/内部检查/组件预览');fs.mkdirSync(internal,{recursive:true});
+(async()=>{
+ const serveUrl=await bundle({entryPoint:path.join(series,'预览入口.tsx'),publicDir:path.join(group,'remotion-test/public'),onProgress:()=>{}}),browser=await require(path.join(template,'检查/浏览器.cjs')).open();
+ const stats=require(path.join(template,'检查/稳定采集.cjs')).attachStableCapture(browser,{referenceFile:path.join(internal,'参考.ndjson')});
+ const cache=new Map(),create=browser._createPageInContext.bind(browser);let reused=0;
+ browser._createPageInContext=async args=>{const page=await create(args),client=page._client(),send=client.send.bind(client);client.send=async(method,params,...rest)=>{if(method!=='Page.captureScreenshot')return send(method,params,...rest);const state=await page.evaluate(()=>document.querySelector('[data-glass-scene],[data-six-plane]')?.outerHTML.replace(/data-archive-frame="\d+"/,'').replace(/data-six-source-frame="\d+"/,''));if(state&&cache.has(state)){reused++;return cache.get(state);}const result=await send(method,params,...rest);if(state){cache.set(state,result);if(cache.size>4)cache.delete(cache.keys().next().value);}return result;};return page;};
+ const items=JSON.parse(fs.readFileSync(path.join(library,'组件索引.json'),'utf8')).components.filter(c=>c.seriesId==='S002');
+ try{
+  const composition=(await getCompositions(serveUrl,{puppeteerInstance:browser,logLevel:'error'})).find(c=>c.id==='S002-Batch');
+  for(let i=0;i<items.length;i++)await renderStill({serveUrl,composition,frame:i*135+70,output:path.join(library,items[i].poster),imageFormat:'png',puppeteerInstance:browser,logLevel:'error'});
+  let last=0;await renderMedia({serveUrl,composition,outputLocation:path.join(series,'系列总览.mp4'),codec:'h264',crf:16,pixelFormat:'yuv420p',imageFormat:'png',x264Preset:'fast',concurrency:2,muted:true,enforceAudioTrack:false,puppeteerInstance:browser,logLevel:'error',onProgress:({progress})=>{if(Date.now()-last>20000){console.log('学员组件预览',Math.round(progress*100)+'%');last=Date.now();}}});
+  const segments=path.join(internal,'切片');fs.mkdirSync(segments,{recursive:true});
+  cp.execFileSync('ffmpeg',['-v','error','-y','-i',path.join(series,'系列总览.mp4'),'-map','0:v:0','-an','-c:v','libx264','-preset','fast','-crf','16','-pix_fmt','yuv420p','-g','135','-keyint_min','135','-sc_threshold','0','-bf','0','-force_key_frames','expr:gte(n,n_forced*135)','-f','segment','-segment_time','4.5','-segment_time_delta','0.016667','-reset_timestamps','1',path.join(segments,'%02d.mp4')]);
+  if(fs.readdirSync(segments).filter(f=>f.endsWith('.mp4')).length!==15)throw Error('独立组件预览数量不符');
+  for(let i=0;i<items.length;i++){const file=path.join(segments,String(i).padStart(2,'0')+'.mp4');const meta=JSON.parse(cp.execFileSync('ffprobe',['-v','error','-show_streams','-of','json',file],{encoding:'utf8'}));if(meta.streams.length!==1||Number(meta.streams[0].nb_frames)!==135||meta.streams[0].width!==1920||meta.streams[0].height!==1080)throw Error('组件预览规格不符');cp.execFileSync('ffmpeg',['-v','error','-i',file,'-f','null','-']);fs.copyFileSync(file,path.join(library,items[i].preview));}
+  const basic=JSON.parse(fs.readFileSync(path.join(library,'组件索引.json'),'utf8')).components.filter(c=>c.seriesId==='S001');
+  for(const item of basic){const url=await bundle({entryPoint:path.join(library,item.entryPoint),publicDir:path.join(group,'remotion-test/public'),onProgress:()=>{}}),comp=(await getCompositions(url,{puppeteerInstance:browser,logLevel:'error'})).find(c=>c.id===item.id);if(!comp)throw Error('基础组件入口缺失');await renderStill({serveUrl:url,composition:comp,frame:120,output:path.join(library,item.poster),imageFormat:'png',puppeteerInstance:browser,logLevel:'error'});await renderMedia({serveUrl:url,composition:comp,outputLocation:path.join(library,item.preview),codec:'h264',crf:16,pixelFormat:'yuv420p',imageFormat:'png',x264Preset:'fast',concurrency:2,muted:true,enforceAudioTrack:false,puppeteerInstance:browser,logLevel:'error'});console.log('基础组件预览',item.id);}
+  const list=path.join(internal,'基础系列.txt');fs.writeFileSync(list,basic.map(c=>"file '"+path.join(library,c.preview).replaceAll("'","'\\''")+"'").join('\n')+'\n');cp.execFileSync('ffmpeg',['-v','error','-y','-f','concat','-safe','0','-i',list,'-c','copy',path.join(library,'S001_基础磨砂系列/系列总览.mp4')]);
+  fs.writeFileSync(path.join(internal,'检查.json'),JSON.stringify({passed:true,components:18,frames:2475,capture:stats,reusedVerifiedFrames:reused},null,2));console.log('18项无人物组件的独立预览已完成');
+ }finally{await browser.close({silent:true});}
+})().catch(e=>{console.error(e.stack||e);process.exitCode=1;});

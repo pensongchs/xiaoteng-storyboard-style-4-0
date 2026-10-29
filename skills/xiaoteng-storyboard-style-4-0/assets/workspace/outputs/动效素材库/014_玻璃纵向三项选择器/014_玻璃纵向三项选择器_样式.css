@@ -1,0 +1,162 @@
+/* From Uiverse.io by chase2k25 */
+.glass-radio-group-vertical {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0);
+  padding: 1.5rem 1.2rem;
+  border: 0px solid rgb(255, 255, 255, 0);
+  border-radius: 1rem;
+  backdrop-filter: blur(16px);
+  width: 230px;
+  overflow: hidden;
+  gap: 0.5rem;
+}
+
+.glass-radio-group-vertical input {
+  display: none;
+}
+
+.glass-radio-group-vertical label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 1.2rem;
+  border-radius: 0.8rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ccc;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+.label-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.radio-indicator {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: white;
+  box-shadow: 0 0 0 2px transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkmark {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.glass-glider-vertical {
+  position: absolute;
+  left: 0;
+  height: 56px;
+  width: 80%;
+  margin-left: 20px;
+  border-radius: 0.8rem;
+  z-index: 1;
+  transition:
+    transform 0.4s cubic-bezier(0.5, 1.6, 0.4, 1),
+    background 0.5s ease-in-out,
+    box-shadow 0.4s;
+}
+
+#glass-silver:checked ~ .glass-glider-vertical {
+  transform: translateY(0%);
+  background: linear-gradient(135deg, #00000050, #d1d1d1cc);
+  box-shadow: 0 0 15px #00000077;
+}
+
+#glass-silver:checked + label {
+  color: white;
+}
+
+#glass-silver:checked + label .radio-indicator {
+  background: #c0c0c0;
+  box-shadow:
+    0 0 0 2px #858585aa,
+    0 0 6px #6b6b6baa;
+}
+
+#glass-silver:checked + label .checkmark {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#glass-gold:checked ~ .glass-glider-vertical {
+  transform: translateY(115%);
+  background: linear-gradient(135deg, #00000050, #ffbb00);
+  box-shadow: 0 0 15px #00000077;
+}
+
+#glass-gold:checked + label {
+  color: white;
+}
+
+#glass-gold:checked + label .radio-indicator {
+  background: #ffc400;
+  box-shadow:
+    0 0 0 2px #9c7300d3,
+    0 0 6px #695a00aa;
+}
+
+#glass-gold:checked + label .checkmark {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#glass-platinum:checked ~ .glass-glider-vertical {
+  transform: translateY(230%);
+  background: linear-gradient(135deg, #00000050, #57d5ff);
+  box-shadow: 0 0 15px #00000077;
+}
+
+#glass-platinum:checked + label {
+  color: white;
+}
+
+#glass-platinum:checked + label .radio-indicator {
+  background: #75c5ff;
+  box-shadow:
+    0 0 0 2px #0095ff5b,
+    0 0 6px #0095ff57;
+}
+
+#glass-platinum:checked + label .checkmark {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.glass-radio-group-vertical:has(#glass-silver:checked) {
+  border-color: #c0c0c0;
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.2),
+    inset 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.glass-radio-group-vertical:has(#glass-gold:checked) {
+  border-color: #ffbb00;
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.2),
+    inset 0 0 8px rgba(255, 196, 0, 0.527);
+}
+
+.glass-radio-group-vertical:has(#glass-platinum:checked) {
+  border-color: #57d5ff;
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.2),
+    inset 0 0 8px rgba(0, 183, 255, 0.63);
+}
