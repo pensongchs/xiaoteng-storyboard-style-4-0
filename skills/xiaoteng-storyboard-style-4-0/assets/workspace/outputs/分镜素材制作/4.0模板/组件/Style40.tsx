@@ -3,6 +3,7 @@ import {Capsule as FrostCapsule,PearlCard as FrostCard,FrostSurface,SolidEnter} 
 import {LiquidSurface,SpecularRim,AssetContext} from './Glass40';
 import {STYLE40 as S} from '../参数';
 import {frame40} from './Clock40';
+import {overlaps40 as overlaps} from './LayoutGeometry40';
 import {Easing, Img, interpolate, spring, staticFile, delayRender, continueRender, cancelRender} from 'remotion';
 
 export const F=frame40;
@@ -176,6 +177,16 @@ export const LayoutAudit=({frame}:{frame:number})=>{
    if(bottom>S.canvas.subtitleTop+.5)errors.push({text:box.textContent??'',kind:'subtitle-safe-area',edge:[Math.round(bottom*10)/10]});
   });
   const visible=(node:Element)=>{let alpha=1;for(let parent:Element|null=node;parent;parent=parent.parentElement){const s=getComputedStyle(parent);if(s.visibility==='hidden'||s.display==='none')return false;alpha*=Number(s.opacity);}return alpha>.05;};
+  const settled=(node:Element)=>{let alpha=1;for(let parent:Element|null=node;parent;parent=parent.parentElement)alpha*=Number(getComputedStyle(parent).opacity);return visible(node)&&alpha>.97;};
+  const boxes=Array.from(document.querySelectorAll<HTMLElement>('[data-textbox]')).filter(settled).map(node=>({node,rect:node.getBoundingClientRect()})).filter(x=>x.rect.width>1&&x.rect.height>1);
+  for(let i=0;i<boxes.length;i++)for(let j=i+1;j<boxes.length;j++){
+   const a=boxes[i],b=boxes[j];if(a.node.contains(b.node)||b.node.contains(a.node))continue;
+   if(overlaps(a.rect,b.rect))errors.push({text:(a.node.textContent??'')+' / '+b.node.textContent,kind:'textbox-overlap',edge:[a.rect.x,a.rect.y,b.rect.x,b.rect.y]});
+  }
+  for(const node of Array.from(document.querySelectorAll<HTMLElement>('[data-safe-text]')).filter(settled)){
+   const range=document.createRange();range.selectNodeContents(node);const r=range.getBoundingClientRect();if(!r.width||!r.height)continue;
+   for(const box of boxes)if(!box.node.contains(node)&&!node.contains(box.node)&&overlaps(r,box.rect))errors.push({text:node.textContent??'',kind:'text-box-overlap',edge:[r.x,r.y,box.rect.x,box.rect.y]});
+  }
   document.querySelectorAll<HTMLElement>('[data-six-line-gap]').forEach(line=>{
    if(!visible(line))return;
    const root=line.closest<HTMLElement>('[data-six-content]');if(!root)return;

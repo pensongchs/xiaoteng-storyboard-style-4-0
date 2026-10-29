@@ -9,10 +9,12 @@
   "scripts": {
     "prepare:project": "node scripts/prepare.cjs",
     "doctor": "node scripts/doctor.cjs",
-    "check": "node outputs/\u5206\u955c\u7d20\u6750\u5236\u4f5c/4.0\u6a21\u677f/\u6e32\u67d3.cjs check \u5206\u955c\u89c4\u5212/\u5b66\u5458\u793a\u4f8b/\u955c\u5934\u5951\u7ea6.json",
-    "render:demo": "node outputs/\u5206\u955c\u7d20\u6750\u5236\u4f5c/4.0\u6a21\u677f/\u6e32\u67d3.cjs render \u5206\u955c\u89c4\u5212/\u5b66\u5458\u793a\u4f8b/\u955c\u5934\u5951\u7ea6.json",
+    "check": "node outputs/分镜素材制作/4.0模板/渲染.cjs check 分镜规划/学员示例/镜头契约.json",
+    "render:demo": "node outputs/分镜素材制作/4.0模板/渲染.cjs render 分镜规划/学员示例/镜头契约.json",
     "station": "node scripts/review.cjs",
-    "build:station": "vite build --config outputs/\u5206\u955c\u7d20\u6750\u5236\u4f5c/vite.config.ts"
+    "build:station": "vite build --config outputs/分镜素材制作/vite.config.ts",
+    "setup": "node scripts/setup.cjs",
+    "test:runtime": "node --test scripts/runtime.test.cjs scripts/media.test.cjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.484",

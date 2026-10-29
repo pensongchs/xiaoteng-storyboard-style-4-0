@@ -95,17 +95,9 @@ const Escrow=({g}:{g:number})=>{
  </svg>;
 };
 
-const QualityCheck=({g}:{g:number})=>{
- const at=data.mg[3].atMs;if(g<F(at))return null;const q=p(g,at,32),r=p(g,52303,20);
- return <svg data-mg-unit="M04" width="1280" height="720" style={{position:'absolute',inset:0}}>
-  <path d="M150 320H340" stroke={C.gold} strokeWidth="2" strokeOpacity=".35"/>
-  {[0,1,2].map(i=><g key={i} transform={`translate(${170+i*65} 320)`} opacity={Math.min(1,Math.max(0,q*3-i))}><circle r="12" fill="#172723" stroke={C.green}/><path d="m-9 0 6 6 13-14" fill="none" stroke={C.green} strokeWidth="3" strokeLinecap="round"/></g>)}
-  <circle cx={150+190*r} cy="320" r="4" fill={C.gold}/>
- </svg>;
-};
 
 const ChoiceRail=({g}:{g:number})=>{
- const at=data.mg[4].atMs;if(g<F(at))return null;const q=p(g,at,25),r=p(g,data.times.cases,16);
+ const at=data.mg[3].atMs;if(g<F(at))return null;const q=p(g,at,25),r=p(g,data.times.cases,16);
  return <svg data-mg-unit="M05" width="1280" height="720" style={{position:'absolute',inset:0}}>
   <path d="M445 457V485Q445 520 485 520H795Q830 520 830 485V457" fill="none" stroke={C.gold} strokeOpacity=".65" strokeWidth="2" pathLength="1" strokeDasharray="1" strokeDashoffset={1-q}/>
   <circle cx="640" cy="520" r={12+9*q} fill="#25231e" stroke={C.gold} strokeWidth="2"/>
@@ -120,7 +112,7 @@ const Content=({g,id}:{g:number;id:string})=><>
  {id==='data'&&<TradingChart g={g}/>}
  {id==='activity'&&<Electric035 g={g} at={data.times.electric[0]} secondAt={data.times.electric[1]} x={72} y={365} w={750} h={235} title="二手房" body="交易更活跃"/>}
  {id==='policy'&&<><Selector004 g={g} times={data.times.selector} labels={['有序推进','现房销售','资金监管']} x={72} y={210}/><Escrow g={g}/></>}
- {id==='quality'&&<><CarouselCaption40 g={g} assetRoot={data.assetRoot} items={data.carousel.items}/><QualityCheck g={g}/></>}
+ {id==='quality'&&<><CarouselCaption40 g={g} assetRoot={data.assetRoot} items={data.carousel.items}/></>}
  {id==='choice'&&<ChoiceRail g={g}/>}
 </>;
 
